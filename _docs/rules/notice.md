@@ -29,7 +29,7 @@ eduroam Compliance Statement 4.8 도 로밍 운영기관이 참여기관 정보�
 ## 게시 요건
 
 - 글자 크기 **14px(0.875rem) 이상**
-- 배경 대비 **4.5:1 이상**(WCAG 2.1 AA), 링크는 밑줄을 유지합니다
+- **배경과 구분되는 색**으로 둡니다. 배경 대비 **4.5:1 이상**(WCAG 2.1 AA)이어야 합니다. 배경과 같거나 비슷한 색, 아주 옅은 회색, `opacity`·`filter` 로 흐리게 하기처럼 **읽히지 않게 만드는 방법은 모두 숨긴 것으로 봅니다.** 링크는 밑줄을 유지합니다
 - 숨기지 않습니다 — `display:none`, `visibility:hidden`, `opacity` 1 미만, 화면 밖 배치, `aria-hidden`, 접기·모달 안에 넣기 모두 해당합니다
 - **HTML 텍스트**로 둡니다. 이미지로 만들거나 JavaScript 로 나중에 넣지 않습니다
 - 링크에 `rel="nofollow"`, `rel="sponsored"`, `rel="ugc"` 를 붙이지 않습니다
