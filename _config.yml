@@ -1,6 +1,9 @@
 title: eduroam Korea 위키
 description: 대한민국 eduroam 운영 규정과 기술 규격, 운영 기록
 
+remote_theme: eduroam-kr/multipage-jekyll-site-theme@v1
+brand: Korea 위키
+
 url: "https://wiki.eduroam.kreonet.net"
 baseurl: ""
 
@@ -10,6 +13,7 @@ timezone: Asia/Seoul
 future: true
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-sitemap
 
 collections:
@@ -19,7 +23,7 @@ collections:
 
 defaults:
   - scope: { path: "", type: docs }
-    values: { layout: doc }
+    values: { layout: doc, toc: true, print: clean }
 
 sass:
   style: compressed

@@ -10,9 +10,6 @@ section_url: /rules/
 
 대한민국 eduroam(이하 **국가에듀롬**)의 국가 로밍 운영기관(NRO)과 참여기관이 지켜야 할 규칙을 정합니다. 이 약관은 GÉANT 가 정한 [eduroam Compliance Statement](https://eduroam.org/support/eduroam-documentation/)(GeCS)의 필수사항을 만족합니다.
 
-* 목차
-{:toc}
-
 ## 0. 개정 이력
 {: #s0-history }
 

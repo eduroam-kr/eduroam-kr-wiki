@@ -10,3 +10,7 @@
 - title: 기록
   url: /records/
   icon: fa-box-archive
+- title: 공식 웹사이트
+  url: https://eduroam.kreonet.net
+  icon: fa-arrow-up-right-from-square
+  external: true

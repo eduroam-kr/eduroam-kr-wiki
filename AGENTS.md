@@ -28,9 +28,13 @@ sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' <onepage-html-s
 
 기관을 지목해 잘못을 적지 않는다. 패턴으로 적고, 그 기관에는 따로 연락한다.
 
-## 색과 제목
+## 껍데기는 테마가 맡는다
 
-`eduroam-kr-nro-web` 과 같은 레이아웃을 쓴다. Bootstrap 5.3 기본 팔레트를 그대로 쓰고 `assets/css/site.css` 에 hex 값을 넣지 않는다. 제목은 `<h1>`, `<h2>`, `<h3>` 를 그대로 쓰고 크기는 CSS 한 곳에서 정한다 — 크기 때문에 다른 태그나 클래스를 쓰지 않는다.
+레이아웃·머리글·바닥글·CSS·테마 스크립트는 [multipage-jekyll-site-theme](https://github.com/eduroam-kr/multipage-jekyll-site-theme) 이 들고 있다. `_config.yml` 의 `remote_theme` 이 태그로 고정한다. 여기에 같은 경로의 파일을 두면 그것만 덮어쓴다 — 덮어쓰기 전에 테마 쪽에서 고칠 일인지 먼저 따진다.
+
+메뉴는 `_data/nav.yml` 이 정한다. 문서 쪽 front matter 에서 `toc`, `print`, `print_toc` 로 목차와 인쇄를 켠다. 기본값은 `_config.yml` 의 `defaults` 에 있다.
+
+색은 Bootstrap 5.3 기본 팔레트를 그대로 쓴다. 제목은 `<h1>`, `<h2>`, `<h3>` 를 그대로 쓰고 크기는 테마가 정한다 — 크기 때문에 다른 태그나 클래스를 쓰지 않는다.
 
 front matter 의 `description` 은 쓰지 않는다. 본문 앞부분을 잘라 쓴다.
 
