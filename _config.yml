@@ -1,0 +1,31 @@
+title: eduroam Korea 위키
+description: 대한민국 eduroam 운영 규정과 기술 규격, 운영 기록
+
+url: "https://wiki.eduroam.kreonet.net"
+baseurl: ""
+
+# 빌드는 UTC 인 CI 에서 돈다. 이걸 비워 두면 오늘 날짜로 쓴 글이 "미래"가 되어
+# 목록에는 뜨는데 페이지는 만들어지지 않는다.
+timezone: Asia/Seoul
+future: true
+
+plugins:
+  - jekyll-sitemap
+
+collections:
+  docs:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope: { path: "", type: docs }
+    values: { layout: doc }
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

@@ -1,0 +1,12 @@
+- title: 규정
+  url: /rules/
+  icon: fa-scale-balanced
+- title: 기술
+  url: /tech/
+  icon: fa-network-wired
+- title: 연혁
+  url: /history/
+  icon: fa-clock-rotate-left
+- title: 기록
+  url: /records/
+  icon: fa-box-archive

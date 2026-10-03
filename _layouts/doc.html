@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="container wrap py-5">
+  <nav class="small text-body-secondary mb-2" aria-label="위치">
+    <a href="{{ '/' | relative_url }}">위키</a>
+    {%- if page.section %} · <a href="{{ page.section_url | relative_url }}">{{ page.section }}</a>{% endif %}
+  </nav>
+  <h1>{{ page.title }}</h1>
+  {%- if page.updated %}
+  <p class="small text-body-secondary">고침 <time datetime="{{ page.updated | date: '%Y-%m-%d' }}">{{ page.updated | date: '%Y-%m-%d' }}</time>{% if page.version %} · {{ page.version }}{% endif %}</p>
+  {%- endif %}
+  <div class="doc-body">{{ content }}</div>
+</div>

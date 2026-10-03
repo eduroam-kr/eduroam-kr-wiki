@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+  <div class="container wrap">
+    <a class="navbar-brand d-flex align-items-center gap-2 py-1" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/eduroam-logo.svg' | relative_url }}" alt="eduroam" width="90" height="35" class="brand-logo brand-logo-light">
+      <img src="{{ '/assets/eduroam-logo-white.svg' | relative_url }}" alt="eduroam" width="90" height="35" class="brand-logo brand-logo-dark">
+      <span class="fw-semibold">Korea 위키</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sitenav"
+            aria-controls="sitenav" aria-expanded="false" aria-label="메뉴">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sitenav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 small">
+        {%- for s in site.data.nav %}
+        <li class="nav-item"><a class="nav-link" href="{{ s.url | relative_url }}"><i class="fa-solid {{ s.icon }} fa-fw" aria-hidden="true"></i> {{ s.title }}</a></li>
+        {%- endfor %}
+        <li class="nav-item"><a class="nav-link" href="https://eduroam.kreonet.net" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square fa-fw" aria-hidden="true"></i> 공식 웹사이트</a></li>
+        <li class="nav-item dropdown ms-lg-1">
+          <button class="btn btn-sm btn-outline-secondary" id="theme-toggle" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false" aria-label="테마">
+            <span data-theme-icon>&#x25D0;</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" type="button" data-theme-set="light">&#x2600; 밝게</button></li>
+            <li><button class="dropdown-item" type="button" data-theme-set="dark">&#x263E; 어둡게</button></li>
+            <li><button class="dropdown-item" type="button" data-theme-set="auto">&#x25D0; 시스템</button></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
