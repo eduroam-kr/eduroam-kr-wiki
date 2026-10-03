@@ -1,6 +1,11 @@
 - title: 규정
   url: /rules/
   icon: fa-scale-balanced
+  children:
+    - title: 고지문 게시 규정
+      url: /rules/notice/
+    - title: 국가에듀롬 운영약관
+      url: /rules/provisions/
 - title: 기술
   url: /tech/
   icon: fa-network-wired
