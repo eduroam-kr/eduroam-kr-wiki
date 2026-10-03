@@ -292,7 +292,7 @@ section_url: /rules/
 (3) 에듀롬 서비스 지역
 (4) 에듀롬 사용자가 쓸 수 있는 네트워크 서비스 (프로토콜, 포트, 설명)
 
-**참여기관 안내 페이지는 [site-template](https://github.com/eduroam-kr/site-template) 을 쓰면 위 항목이 모두 들어 있다.** 페이지 주소는 [eduroam-kr-db](https://github.com/eduroam-kr/eduroam-kr-db) 의 `info_url` 로 제출한다.
+**참여기관 안내 페이지는 [onepage-html-site-theme](https://github.com/eduroam-kr/onepage-html-site-theme) 을 쓰면 위 항목이 모두 들어 있다.** 페이지 주소는 [eduroam-kr-db](https://github.com/eduroam-kr/eduroam-kr-db) 의 `info_url` 로 제출한다.
 
 ### 4.6. 통지 및 경보
 {: #s4-6 }

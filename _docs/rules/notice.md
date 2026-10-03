@@ -55,7 +55,7 @@ eduroam Compliance Statement 4.8 도 로밍 운영기관이 참여기관 정보�
 <!-- END eduroam-KR notice (en) -->
 ```
 
-[site-template](https://github.com/eduroam-kr/site-template) 을 쓰면 위 블록이 이미 들어 있습니다. 기관명 한 군데만 바꾸면 됩니다.
+[onepage-html-site-theme](https://github.com/eduroam-kr/onepage-html-site-theme) 을 쓰면 위 블록이 이미 들어 있습니다. 기관명 한 군데만 바꾸면 됩니다.
 
 ## 지키지 않으면
 

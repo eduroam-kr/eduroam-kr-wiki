@@ -4,19 +4,19 @@
 
 ## 공식 웹사이트와 겹치지 않는다
 
-규범은 공식 웹사이트(`nro-site`), 해설은 여기, 구현은 `nro-docker` 다. 같은 주제를 셋에 써도 층이 다르면 중복이 아니다. 다만 **같은 층을 두 곳에 쓰지 않는다** — 규칙을 여기에 또 적으면 둘이 갈라진다.
+규범은 공식 웹사이트(`eduroam-kr-nro-web`), 해설은 여기, 구현은 `nro-docker` 다. 같은 주제를 셋에 써도 층이 다르면 중복이 아니다. 다만 **같은 층을 두 곳에 쓰지 않는다** — 규칙을 여기에 또 적으면 둘이 갈라진다.
 
 조항 번호가 다리다. 공식 웹사이트가 요약과 번호를 두고, 여기가 전문과 근거를 둔다.
 
 ## 고지문은 복사해 오지 않는다
 
-`rules/notice.md` 의 복사용 블록은 `site-template` 의 원문과 글자까지 같아야 한다. 손으로 옮기지 말고 아래로 뽑는다.
+`rules/notice.md` 의 복사용 블록은 `onepage-html-site-theme` 의 원문과 글자까지 같아야 한다. 손으로 옮기지 말고 아래로 뽑는다.
 
 ```sh
-sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' ../site-template/index.html
+sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' <onepage-html-site-theme 체크아웃>/index.html
 ```
 
-고지문 자체를 고쳐야 하면 `nro-site`·`site-template`·참여기관 포크를 같이 고치고 여기 블록도 다시 뽑는다.
+고지문 자체를 고쳐야 하면 `eduroam-kr-nro-web`·`onepage-html-site-theme`·참여기관 포크를 같이 고치고 여기 블록도 다시 뽑는다.
 
 ## 국문만 쓴다
 
@@ -30,7 +30,7 @@ sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' ../site-templat
 
 ## 색과 제목
 
-`nro-site` 와 같은 레이아웃을 쓴다. Bootstrap 5.3 기본 팔레트를 그대로 쓰고 `assets/css/site.css` 에 hex 값을 넣지 않는다. 제목은 `<h1>`, `<h2>`, `<h3>` 를 그대로 쓰고 크기는 CSS 한 곳에서 정한다 — 크기 때문에 다른 태그나 클래스를 쓰지 않는다.
+`eduroam-kr-nro-web` 과 같은 레이아웃을 쓴다. Bootstrap 5.3 기본 팔레트를 그대로 쓰고 `assets/css/site.css` 에 hex 값을 넣지 않는다. 제목은 `<h1>`, `<h2>`, `<h3>` 를 그대로 쓰고 크기는 CSS 한 곳에서 정한다 — 크기 때문에 다른 태그나 클래스를 쓰지 않는다.
 
 front matter 의 `description` 은 쓰지 않는다. 본문 앞부분을 잘라 쓴다.
 
