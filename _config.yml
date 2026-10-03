@@ -1,7 +1,7 @@
 title: eduroam Korea 위키
 description: 대한민국 eduroam 운영 규정과 기술 규격, 운영 기록
 
-remote_theme: eduroam-kr/multipage-jekyll-site-theme@v1
+remote_theme: eduroam-kr/multipage-jekyll-site-theme@v1.1
 brand: Korea 위키
 
 # 틀 너비. 규정 문서에 표와 코드가 많아 공식 웹사이트보다 넓게 쓴다.
