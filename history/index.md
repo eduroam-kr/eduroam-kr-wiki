@@ -18,7 +18,7 @@ permalink: /history/
 
 대한민국 글로벌 에듀롬 가입
 
-- KISTI 가 에듀롬 준수 선언문(eduroam Compliance Statement)에 서명 (2012-08-13)<br>[![에듀롬 준수 선언문]({{ '/assets/img/docs/2012-08-13-compliance-statement.png' | relative_url }}){: .thumb }]({{ '/assets/docs/2012-08-13-eduroam-gegc-kisti-compliance-statement.pdf' | relative_url }})
+- KISTI 가 에듀롬 준수 선언문(eduroam Compliance Statement)에 서명 (2012-08-13)<br><span class="doc-file"><a href="{{ '/assets/docs/2012-08-13-eduroam-gegc-kisti-compliance-statement.pdf' | relative_url }}"><img class="thumb" src="{{ '/assets/img/docs/2012-08-13-compliance-statement.png' | relative_url }}" alt="에듀롬 준수 선언문 첫 쪽"></a><a href="{{ '/assets/docs/2012-08-13-eduroam-gegc-kisti-compliance-statement.pdf' | relative_url }}" title="에듀롬 준수 선언문 내려받기"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i><span class="visually-hidden">에듀롬 준수 선언문 PDF 내려받기</span></a></span>
 - 글로벌과 연계된 eduroam 서비스를 대한민국에서 시작
 - KREONET 은 NRO 지위 획득<br>(NRO: National Roaming Operator)
 
@@ -40,7 +40,7 @@ permalink: /history/
 
 에듀롬 - 로컬 에듀롬 통합
 
-- KISTI - 전남대 MOU<br>[![KISTI 전남대 에듀롬 협약]({{ '/assets/img/docs/2015-04-15-kisti-jnu-mou.png' | relative_url }}){: .thumb }]({{ '/assets/docs/2015-04-15-kisti-jnu-eduroam-mou.pdf' | relative_url }})
+- KISTI - 전남대 MOU<br><span class="doc-file"><a href="{{ '/assets/docs/2015-04-15-kisti-jnu-eduroam-mou.pdf' | relative_url }}"><img class="thumb" src="{{ '/assets/img/docs/2015-04-15-kisti-jnu-mou.png' | relative_url }}" alt="KISTI 전남대 에듀롬 협약 첫 쪽"></a><a href="{{ '/assets/docs/2015-04-15-kisti-jnu-eduroam-mou.pdf' | relative_url }}" title="KISTI · 전남대 에듀롬 협약 내려받기"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i><span class="visually-hidden">KISTI · 전남대 에듀롬 협약 PDF 내려받기</span></a></span>
 - eduroam 과 keduroam 의 통합
 - 대한민국의 에듀롬 운영은 NRO 밑에 대학RO를 두고<br>대학RO는 국공립대학정보기관협의회가 운영하는 것으로 잠정 합의
 - 잠정 합의 사항

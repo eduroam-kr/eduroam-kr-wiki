@@ -1,16 +1,15 @@
 /* 위키 고유 스타일. 머리글·바닥글·문서 본문·목차·인쇄 같은 공통 분은
    multipage-jekyll-site-theme 이 맡는다. */
 
-/* 표의 파일 칸은 아이콘 하나뿐이다. 글자 크기 그대로면 너무 작아
-   눈에도 안 띄고 누르기도 어렵다. */
-.doc-body td .fa-file-pdf,
-.doc-body td .fa-file { font-size: 1.25rem; vertical-align: -.1em; }
+/* 파일 아이콘. 글자 크기 그대로면 너무 작아 눈에도 안 띄고 누르기도 어렵다. */
+.doc-body .fa-file-pdf,
+.doc-body .fa-file { font-size: 1.25rem; vertical-align: -.1em; }
 
-/* 문서 썸네일. 눌러서 원본을 연다. 작게 두어 글 흐름을 끊지 않는다. */
-.doc-body img.thumb {
-  height: 130px;
+/* 문서 미리보기. 첫 쪽 그림과 PDF 아이콘을 나란히 두고 둘 다 원본으로 간다. */
+.doc-file { display: inline-flex; align-items: center; gap: .6rem; margin-top: .35rem; }
+.doc-file .thumb {
+  height: 110px;
   width: auto;
-  margin-top: .35rem;
   border: 1px solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
 }
