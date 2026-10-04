@@ -5,10 +5,12 @@
   url: /rules/
   icon: fa-scale-balanced
   children:
-    - title: 고지문 게시 규정
-      url: /rules/notice/
     - title: 국가에듀롬 운영약관
       url: /rules/provisions/
+    - title: 로밍 운영기관(RO) 운영 요건
+      url: /rules/ro/
+    - title: 고지문 게시 규정
+      url: /rules/notice/
 - title: 기술
   url: /tech/
   icon: fa-network-wired
