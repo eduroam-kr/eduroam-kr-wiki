@@ -10,6 +10,10 @@ permalink: /
 
 대한민국 eduroam 의 **운영 규정, 기술 규격, 운영 기록**을 둡니다. 이용자 안내와 가입 안내는 [공식 웹사이트](https://eduroam.kreonet.net)에 있습니다.
 
+## 연혁
+
+- [에듀롬 KR 연혁]({{ '/history/' | relative_url }})
+
 ## 규정
 
 - [고지문 게시 규정]({{ '/rules/notice/' | relative_url }}) — 참여기관·RO·NRO 가 안내 페이지에 실어야 할 것
@@ -19,10 +23,6 @@ permalink: /
 
 - [CA 인증서 제공 및 사전 설치 (안드로이드 11 이상)]({{ '/tech/ca-install/' | relative_url }})
 - 구현 예시는 [nro-docker](https://github.com/eduroam-kr/nro-docker) 에 있습니다
-
-## 연혁
-
-- [에듀롬 KR 연혁]({{ '/history/' | relative_url }})
 
 ## 기록
 
