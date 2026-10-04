@@ -9,12 +9,22 @@
 - title: 기술
   url: /tech/
   icon: fa-network-wired
+  children:
+    - title: 안드로이드 11 이상의 CA 인증서
+      url: /tech/android-ca/
 - title: 연혁
   url: /history/
   icon: fa-clock-rotate-left
 - title: 기록
   url: /records/
   icon: fa-box-archive
+  children:
+    - title: 발간 문서
+      url: /records/publications/
+    - title: 언론 보도
+      url: /records/press/
+    - title: 2018년 문서 모음
+      url: /records/2018-documents/
 - title: 공식 웹사이트
   url: https://eduroam.kreonet.net
   icon: fa-arrow-up-right-from-square

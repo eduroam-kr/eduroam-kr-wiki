@@ -13,18 +13,20 @@ permalink: /
 ## 규정
 
 - [고지문 게시 규정]({{ '/rules/notice/' | relative_url }}) — 참여기관·RO·NRO 가 안내 페이지에 실어야 할 것
-- [국가에듀롬 운영약관]({{ '/rules/provisions/' | relative_url }}) — NRO·RO·IdP·SP 가 지켜야 할 규칙 (v1.0)
+- [국가에듀롬 운영약관]({{ '/rules/provisions/' | relative_url }}) — NRO·RO·IdP·SP 가 지켜야 할 규칙 (v1.1)
 
 ## 기술
 
-- 준비 중. 구현 예시는 [nro-docker](https://github.com/eduroam-kr/nro-docker) 에 있습니다.
+- [안드로이드 11 이상의 CA 인증서]({{ '/tech/android-ca/' | relative_url }}) — 참여기관이 안내해야 할 값
+- 구현 예시는 [nro-docker](https://github.com/eduroam-kr/nro-docker) 에 있습니다
 
 ## 연혁
 
-- 준비 중
+- [대한민국 eduroam 연혁]({{ '/history/' | relative_url }}) — 2003년부터 지금까지
 
 ## 기록
 
-- 준비 중
+- [행사와 회의, 대외 보고, 장애 기록]({{ '/records/' | relative_url }}) — 날짜와 근거 자료로 남긴 운영 기록
+- [발간 문서]({{ '/records/publications/' | relative_url }}) · [언론 보도]({{ '/records/press/' | relative_url }})
 
 </div>
