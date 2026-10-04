@@ -8,11 +8,32 @@ toc: false
 
 옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
 
-## 에듀롬 KR 회원기관 발간 문서
+목록은 [`_data/publications.yml`](https://github.com/eduroam-kr/eduroam-kr-wiki/blob/main/_data/publications.yml) 이 정본입니다. 빠진 문서가 있으면 그 파일에 Pull Request 를 보내 주세요.
 
-## 에듀롬 KR 운영기관 발간 문서
+{% assign groups = "회원기관,운영기관" | split: "," %}
+{%- for g in groups %}
+{%- assign rows = site.data.publications | where: "by", g %}
 
-| 발간일 | 제목 | 주요 내용 | 저자 | 권/호 | 학회, 출판사 | 비고 |
-|---|---|---|---|---|---|---|
-| 2019.05.31. | 활성 사용자 지표 기반 에듀롬 인증로그 분석 | 에듀롬 인증 로그 중복을 제거하여 에듀롬의 DAU, MAU 측정 | 장민석/KISTI, 조부승/KISTI | [KNOM Conference 2022 Proceeding, 65](http://dpnm.postech.ac.kr/papers/KNOM/19/2019KNOMConfProc_v1.pdf) | 한국통신학회 통신망운용관리 연구회(KNOM) | |
-| 2021.08. | [네트워크 자원 공유를 위한 Federation 동향](https://koren.kr/lib/Common/Com/ComDownload.asp?ttp=brd1&tno=1314) | 에듀롬 운영 현황, ID 연계 | 최덕재/전남대학교 | AI Network Lab Insight, Vol 8 | 한국지능정보사회진흥원 | |
+## 에듀롬 KR {{ g }} 발간 문서
+
+{% if rows.size == 0 %}아직 없습니다.{% else %}
+<table>
+  <thead>
+    <tr><th>발간일</th><th>제목</th><th>주요 내용</th><th>저자</th><th>권/호</th><th>학회, 출판사</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+  {%- for d in rows %}
+    <tr>
+      <td>{{ d.date }}</td>
+      <td>{% if d.url %}<a href="{{ d.url }}">{{ d.title }}</a>{% else %}{{ d.title }}{% endif %}</td>
+      <td>{{ d.summary }}</td>
+      <td>{{ d.authors }}</td>
+      <td>{% if d.volume_url %}<a href="{{ d.volume_url }}">{{ d.volume }}</a>{% else %}{{ d.volume }}{% endif %}</td>
+      <td>{{ d.publisher }}</td>
+      <td>{{ d.note }}</td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>
+{% endif %}
+{%- endfor %}

@@ -1,0 +1,36 @@
+# 에듀롬 KR 발간 문서. 논문·보고서 하나가 한 항목이다.
+#
+# by        회원기관 / 운영기관 — 쪽에서 이 값으로 절을 나눈다
+# date      발간일
+# title     제목 (원문 그대로)
+# url       제목에 거는 주소, 없으면 비워 둔다
+# summary   주요 내용
+# authors   저자
+# volume    권/호
+# volume_url 권/호에 거는 주소, 없으면 비워 둔다
+# publisher 학회, 출판사
+# note      비고
+#
+# 새 문서는 맨 아래에 붙인다.
+
+- by: 운영기관
+  date: "2019.05.31."
+  title: 활성 사용자 지표 기반 에듀롬 인증로그 분석
+  url:
+  summary: 에듀롬 인증 로그 중복을 제거하여 에듀롬의 DAU, MAU 측정
+  authors: 장민석/KISTI, 조부승/KISTI
+  volume: KNOM Conference 2022 Proceeding, 65
+  volume_url: http://dpnm.postech.ac.kr/papers/KNOM/19/2019KNOMConfProc_v1.pdf
+  publisher: 한국통신학회 통신망운용관리 연구회(KNOM)
+  note:
+
+- by: 운영기관
+  date: "2021.08."
+  title: 네트워크 자원 공유를 위한 Federation 동향
+  url: https://koren.kr/lib/Common/Com/ComDownload.asp?ttp=brd1&tno=1314
+  summary: 에듀롬 운영 현황, ID 연계
+  authors: 최덕재/전남대학교
+  volume: AI Network Lab Insight, Vol 8
+  volume_url:
+  publisher: 한국지능정보사회진흥원
+  note:

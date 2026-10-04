@@ -1,0 +1,43 @@
+# 에듀롬 KR 언론 보도. 한 기사가 한 항목이다.
+#
+# kind    보급 / 장애·불편 처럼 기사의 성격
+# date    발행일 YYYY.MM.DD
+# outlet  발행처
+# title   기사 제목 (원문 그대로)
+# url     기사 주소
+# summary 요약 (원문 그대로)
+# note    비고, 없으면 비워 둔다
+#
+# 새 기사는 맨 아래에 붙인다. 쪽은 날짜 오름차순으로 찍는다.
+
+- kind: 보급
+  date: "2015.09.06"
+  outlet: 데일리 저널
+  title: 전남대, 교육기관 정보화 발전 주도
+  url: https://cm.asiae.co.kr/article/2015090612121693237
+  summary: 아태지역 5개 국가를 선정해 에듀롬 서비스를 보급 확산하는 XeAP(Extending eduroam in the Asia Pacific) 프로젝트를 추진
+  note:
+
+- kind: 장애/불편
+  date: "2023.04.02"
+  outlet: 서울대 신문
+  title: 교내 무선랜 사용 불편 접수 多 … 주요 오류 아직 이유 모른다
+  url: http://www.snunews.com/news/articleView.html?idxno=31892
+  summary: 학내 무선랜 에듀롬(eduroam) 속도 저하와 접속 문제에 대한 불만이 거듭 제기. 로그인 후 무선랜 연결 불가, 무선랜 속도 저하, 무선랜 초기 접속 자체가 불가한 문제 등을 지적
+  note:
+
+- kind: 장애/불편
+  date: "2023.06.05"
+  outlet: 전북대신문
+  title: 끊기는 와이파이에 체념하는 학생들
+  url: https://www.jbpresscenter.com/news/articleView.html?idxno=503391
+  summary: 일부 건물 지난 2010년 설치된 구형 와이파이(Wi-Fi 4) 사용. 총학생회, 이른 시일 내 설문조사 진행 예정. 정보전산원 "관련 예산 확보 위해 노력할 것"
+  note:
+
+- kind: 장애/불편
+  date: "2024.04.18"
+  outlet: 계명대 신문
+  title: 에듀롬, 느린 속도와 불안정성에 불만 호소하는 사용자들 많다
+  url: http://www.gokmu.com/news/article.html?no=16420
+  summary: 450명 대상 설문 조사 결과 에듀롬의 속도가 느려 과제 업로드에 불편하다, 에듀롬의 속도가 카카오톡도 못 쓸 수준이다. 수치적인 개선보다 체감할 수 있는 대책 있어야
+  note:

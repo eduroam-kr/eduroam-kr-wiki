@@ -8,9 +8,22 @@ toc: false
 
 옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
 
-| 구분 | 일자 | 발행처 | 제목 | 요약 | 비고 |
-|---|---|---|---|---|---|
-| 보급 | 2015.09.06 | 데일리 저널 | [전남대, 교육기관 정보화 발전 주도](https://cm.asiae.co.kr/article/2015090612121693237) | 아태지역 5개 국가를 선정해 에듀롬 서비스를 보급 확산하는 XeAP(Extending eduroam in the Asia Pacific) 프로젝트를 추진 | |
-| 장애/불편 | 2023.04.02 | 서울대 신문 | [교내 무선랜 사용 불편 접수 多 … 주요 오류 아직 이유 모른다](http://www.snunews.com/news/articleView.html?idxno=31892) | 학내 무선랜 에듀롬(eduroam) 속도 저하와 접속 문제에 대한 불만이 거듭 제기. 로그인 후 무선랜 연결 불가, 무선랜 속도 저하, 무선랜 초기 접속 자체가 불가한 문제 등을 지적 | |
-| 장애/불편 | 2023.06.05 | 전북대신문 | [끊기는 와이파이에 체념하는 학생들](https://www.jbpresscenter.com/news/articleView.html?idxno=503391) | 일부 건물 지난 2010년 설치된 구형 와이파이(Wi-Fi 4) 사용. 총학생회, 이른 시일 내 설문조사 진행 예정. 정보전산원 "관련 예산 확보 위해 노력할 것" | |
-| 장애/불편 | 2024.04.18 | 계명대 신문 | [에듀롬, 느린 속도와 불안정성에 불만 호소하는 사용자들 많다](http://www.gokmu.com/news/article.html?no=16420) | 450명 대상 설문 조사 결과 에듀롬의 속도가 느려 과제 업로드에 불편하다, 에듀롬의 속도가 카카오톡도 못 쓸 수준이다. 수치적인 개선보다 체감할 수 있는 대책 있어야 | |
+목록은 [`_data/press.yml`](https://github.com/eduroam-kr/eduroam-kr-wiki/blob/main/_data/press.yml) 이 정본입니다. 빠진 기사가 있으면 그 파일에 Pull Request 를 보내 주세요.
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>일자</th><th>발행처</th><th>제목</th><th>요약</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+  {%- for a in site.data.press %}
+    <tr>
+      <td>{{ a.kind }}</td>
+      <td>{{ a.date }}</td>
+      <td>{{ a.outlet }}</td>
+      <td>{% if a.url %}<a href="{{ a.url }}">{{ a.title }}</a>{% else %}{{ a.title }}{% endif %}</td>
+      <td>{{ a.summary }}</td>
+      <td>{{ a.note }}</td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>

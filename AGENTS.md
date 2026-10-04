@@ -18,6 +18,12 @@ sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' <onepage-html-s
 
 고지문 자체를 고쳐야 하면 `eduroam-kr-nro-web`·`onepage-html-site-theme`·참여기관 포크를 같이 고치고 여기 블록도 다시 뽑는다.
 
+## 되풀이되는 목록은 _data 에 둔다
+
+언론 보도와 발간 문서처럼 같은 꼴이 쌓이는 것은 마크다운 표로 적지 않는다. `_data/press.yml`, `_data/publications.yml` 이 정본이고 쪽은 그걸 돌려 표를 찍는다. 파이프 하나 어긋나 표가 깨질 일이 없고, 항목 하나 더하는 Pull Request 가 쉬워진다.
+
+산문은 그대로 마크다운에 둔다. 회의록이나 답변서를 YAML 로 쪼개면 원문이 아니라 내가 만든 구조가 된다.
+
 ## 국문만 쓴다
 
 위키는 국내 운영 문서라 한국어 하나로 쓴다. GeGC 나 해외 NRO 가 읽어야 하는 문서는 그 문서 안에 영문 절을 둔다. `/en/` 두 벌을 만들지 않는다.
