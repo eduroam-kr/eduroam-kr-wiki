@@ -17,16 +17,16 @@ permalink: /
 
 ## 기술
 
-- [안드로이드 11 이상의 CA 인증서]({{ '/tech/android-ca/' | relative_url }}) — 참여기관이 안내해야 할 값
+- [CA 인증서 제공 및 사전 설치 (안드로이드 11 이상)]({{ '/tech/ca-install/' | relative_url }})
 - 구현 예시는 [nro-docker](https://github.com/eduroam-kr/nro-docker) 에 있습니다
 
 ## 연혁
 
-- [대한민국 eduroam 연혁]({{ '/history/' | relative_url }}) — 2003년부터 지금까지
+- [에듀롬 KR 연혁]({{ '/history/' | relative_url }}) — 옛 위키에서 옮긴 연혁
 
 ## 기록
 
-- [행사와 회의, 대외 보고, 장애 기록]({{ '/records/' | relative_url }}) — 날짜와 근거 자료로 남긴 운영 기록
-- [발간 문서]({{ '/records/publications/' | relative_url }}) · [언론 보도]({{ '/records/press/' | relative_url }})
+- [운영 기록]({{ '/records/' | relative_url }}) — 행사와 회의, 대외 보고, 공지
+- [에듀롬 KR 발간 문서]({{ '/records/publications/' | relative_url }}) · [에듀롬 KR 언론 보도]({{ '/records/press/' | relative_url }})
 
 </div>

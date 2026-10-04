@@ -10,8 +10,8 @@
   url: /tech/
   icon: fa-network-wired
   children:
-    - title: 안드로이드 11 이상의 CA 인증서
-      url: /tech/android-ca/
+    - title: CA 인증서 사전 설치 (안드로이드 11 이상)
+      url: /tech/ca-install/
 - title: 연혁
   url: /history/
   icon: fa-clock-rotate-left
@@ -19,12 +19,12 @@
   url: /records/
   icon: fa-box-archive
   children:
-    - title: 발간 문서
+    - title: 에듀롬 KR 발간 문서
       url: /records/publications/
-    - title: 언론 보도
+    - title: 에듀롬 KR 언론 보도
       url: /records/press/
-    - title: 2018년 문서 모음
-      url: /records/2018-documents/
+    - title: 정책 및 가입 안내 (2018)
+      url: /records/policy-and-join/
 - title: 공식 웹사이트
   url: https://eduroam.kreonet.net
   icon: fa-arrow-up-right-from-square
