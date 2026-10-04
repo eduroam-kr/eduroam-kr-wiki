@@ -3,10 +3,12 @@ layout: default
 ---
 <div class="container {% if page.toc %}with-toc{% else %}wrap{% endif %} py-5">
   <div class="doc-head">
+    {%- comment %} 첫 쪽은 머리글 로고가 데려다준다. 여기는 속한 갈래만 밝힌다. {%- endcomment %}
+    {%- if page.section %}
     <nav class="small text-body-secondary mb-2 print-hide" aria-label="위치">
-      <a href="{{ '/' | relative_url }}">위키</a>
-      {%- if page.section %} · <a href="{{ page.section_url | relative_url }}">{{ page.section }}</a>{% endif %}
+      <a href="{{ page.section_url | relative_url }}">{{ page.section }}</a>
     </nav>
+    {%- endif %}
     <h1>{{ page.title }}</h1>
     {%- comment %} 규정은 고쳐 가며 쓰고(updated), 기록은 그날 적고 그만이다(created). {%- endcomment %}
     {%- assign stamp = page.updated | default: page.created %}
