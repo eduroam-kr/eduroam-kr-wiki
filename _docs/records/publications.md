@@ -9,7 +9,7 @@ toc: false
 excerpt_separator: ""
 ---
 
-{% assign groups = "회원기관,운영기관" | split: "," %}
+{% assign groups = "운영기관,참여기관" | split: "," %}
 {%- for g in groups %}
 {%- assign rows = site.data.publications | where: "by", g %}
 
@@ -18,7 +18,7 @@ excerpt_separator: ""
 {% if rows.size == 0 %}아직 없습니다.{% else %}
 <table>
   <thead>
-    <tr><th>발간일</th><th>제목</th><th>주요 내용</th><th>저자</th><th>권/호</th><th>학회, 출판사</th><th>비고</th></tr>
+    <tr><th>발간일</th><th>제목</th><th>주요 내용</th><th>저자</th><th>권/호</th><th>학회, 출판사</th><th>파일</th><th>비고</th></tr>
   </thead>
   <tbody>
   {%- for d in rows %}
@@ -27,8 +27,9 @@ excerpt_separator: ""
       <td>{% if d.url %}<a href="{{ d.url }}">{{ d.title }}</a>{% else %}{{ d.title }}{% endif %}</td>
       <td>{{ d.summary }}</td>
       <td>{{ d.authors }}</td>
-      <td>{% if d.volume_url %}<a href="{{ d.volume_url }}">{{ d.volume }}</a>{% else %}{{ d.volume }}{% endif %}</td>
+      <td>{{ d.volume }}</td>
       <td>{{ d.publisher }}</td>
+      <td>{% if d.file %}<a href="{{ d.file }}" title="{{ d.title }} 내려받기"><i class="fa-regular {% if d.file_type == 'PDF' %}fa-file-pdf{% else %}fa-file{% endif %}" aria-hidden="true"></i><span class="visually-hidden">{{ d.title }} {{ d.file_type | default: '파일' }} 내려받기</span></a>{% endif %}</td>
       <td>{{ d.note }}</td>
     </tr>
   {%- endfor %}

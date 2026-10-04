@@ -1,4 +1,7 @@
 /* 위키 고유 스타일. 머리글·바닥글·문서 본문·목차·인쇄 같은 공통 분은
-   multipage-jekyll-site-theme 이 맡는다.
-   지금은 테마만으로 충분해 비어 있다 — 레이아웃이 이 파일을 반드시 부르므로
-   파일 자체는 둔다. */
+   multipage-jekyll-site-theme 이 맡는다. */
+
+/* 표의 파일 칸은 아이콘 하나뿐이다. 글자 크기 그대로면 너무 작아
+   눈에도 안 띄고 누르기도 어렵다. */
+.doc-body td .fa-file-pdf,
+.doc-body td .fa-file { font-size: 1.25rem; vertical-align: -.1em; }
