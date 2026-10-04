@@ -35,6 +35,8 @@ permalink: /history/
 - 출연연과 그 밖의 기관은 NRO 의 RADIUS 서버로 로밍한다
 - 국내 대학을 벗어난 로밍은 NRO 의 RADIUS 서버로 로밍한다
 
+하지만 `eduroam.kr` 도메인 소유권과 공동사용 등에 대한 합의는 이끌어내지 못하였습니다.
+
 **XeAP 에 참가합니다.** GÉANT 의 아시아태평양 eduroam 보급 프로젝트 XeAP(Extending eduroam in the Asia Pacific)에 참가해 네 차례 교육을 수행했습니다 — 2015년 인도네시아, 2018년 온라인, [2019년 베트남]({{ '/records/2019-08-xeap-vietnam/' | relative_url }}), 2020년 온라인.
 
 ## 2016년 — 상표 등록
