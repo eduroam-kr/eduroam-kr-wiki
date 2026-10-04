@@ -4,6 +4,9 @@ section: 기록
 section_url: /records/
 updated: 2026-10-04
 toc: false
+# 쪽이 Liquid 로 시작해서 Jekyll 이 발췌를 다시 렌더하며 경고를 낸다.
+# 이 쪽은 발췌를 쓰지 않으므로 아예 끈다.
+excerpt_separator: ""
 ---
 
 {% assign groups = "회원기관,운영기관" | split: "," %}
