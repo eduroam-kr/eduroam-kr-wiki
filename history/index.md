@@ -47,7 +47,7 @@ permalink: /history/
 
 ## 2019년 — 베트남에서 eduroam 구축을 가르칩니다
 
-8월 14–15일 하노이 NASATI 에서 [eduroam 구축 세미나]({{ '/records/2019-08-xeap-vietnam/' | relative_url }})를 열었습니다. TEIN 의 Asi@Connect 사업의 일환으로 진행한 XeAP 의 네 차례 교육 가운데 하나입니다.
+8월 14–15일 하노이 NASATI 에서 [eduroam 구축 세미나]({{ '/records/2019-08-xeap-vietnam/' | relative_url }})를 열었습니다. TEIN 의 Asi@Connect 사업으로 진행한 XeAP 교육입니다.
 
 ## 2020년 — GeGC 에 한국 대표가 들어갑니다
 
