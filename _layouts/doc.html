@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class="container {% if page.toc %}with-toc{% else %}wrap{% endif %} py-5">
+{%- comment %} 목차가 없어도 같은 틀을 쓴다. 쪽을 옮길 때 글이 좌우로 흔들리지 않게. {%- endcomment %}
+<div class="container with-toc py-5">
   <div class="doc-head">
     {%- comment %} 첫 쪽은 머리글 로고가 데려다준다. 여기는 속한 갈래만 밝힌다. {%- endcomment %}
     {%- if page.section %}

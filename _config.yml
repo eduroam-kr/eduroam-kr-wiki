@@ -1,12 +1,16 @@
 title: eduroam Korea 위키
 description: 대한민국 eduroam 운영 규정과 기술 규격, 운영 기록
 
-remote_theme: eduroam-kr/multipage-jekyll-site-theme@v1.8
+remote_theme: eduroam-kr/multipage-jekyll-site-theme@v1.12
 brand: Korea 위키
 
 # 틀 너비. 규정 문서에 표와 코드가 많아 공식 웹사이트보다 넓게 쓴다.
+# doc 이 글줄 폭이고, wrap_wide 는 그 옆에 목차(15rem)와 사이 여백(2.5rem)이
+# 들어갈 만큼 넓어야 한다. 목차가 없는 쪽도 같은 틀을 써서 글이 흔들리지 않는다.
+doc: 64rem
 wrap: 64rem
-wrap_wide: 76rem
+wrap_wide: 83rem
+frame: 83rem
 
 url: "https://wiki.eduroam.kreonet.net"
 baseurl: ""

@@ -3,7 +3,8 @@ layout: default
 title: 규정
 permalink: /rules/
 ---
-<div class="container wrap py-5 doc-body" markdown="1">
+<div class="container with-toc py-5">
+<div class="doc-body" markdown="1">
 
 # 규정
 
@@ -11,4 +12,5 @@ permalink: /rules/
 - [국가에듀롬 운영약관]({{ '/rules/provisions/' | relative_url }}) — NRO·RO·IdP·SP 가 지켜야 할 규칙 (v1.1)
 - **참여기관 운영 요건** — 준비 중
 
+</div>
 </div>

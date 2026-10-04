@@ -4,7 +4,8 @@ title: eduroam Korea 위키
 permalink: /
 ---
 
-<div class="container wrap py-5 doc-body" markdown="1">
+<div class="container with-toc py-5">
+<div class="doc-body" markdown="1">
 
 # eduroam Korea 위키
 
@@ -29,4 +30,5 @@ permalink: /
 - [운영 기록]({{ '/records/' | relative_url }}) — 행사와 회의, 대외 보고, 공지
 - [에듀롬 KR 발간 문서]({{ '/records/publications/' | relative_url }}) · [에듀롬 KR 언론 보도]({{ '/records/press/' | relative_url }})
 
+</div>
 </div>

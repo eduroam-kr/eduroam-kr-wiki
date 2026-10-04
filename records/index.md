@@ -3,7 +3,8 @@ layout: default
 title: 기록
 permalink: /records/
 ---
-<div class="container wrap py-5 doc-body" markdown="1">
+<div class="container with-toc py-5">
+<div class="doc-body" markdown="1">
 
 # 기록
 
@@ -33,4 +34,5 @@ permalink: /records/
 - [에듀롬 KR 언론 보도]({{ '/records/press/' | relative_url }})
 - [에듀롬 KR 정책 및 가입 안내 (2018)]({{ '/records/policy-and-join/' | relative_url }})
 
+</div>
 </div>

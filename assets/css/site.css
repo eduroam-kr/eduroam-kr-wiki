@@ -5,11 +5,14 @@
 .doc-body .fa-file-pdf,
 .doc-body .fa-file { font-size: 1.25rem; vertical-align: -.1em; }
 
-/* 문서 미리보기. 첫 쪽 그림과 PDF 아이콘을 나란히 두고 둘 다 원본으로 간다. */
-.doc-file { display: inline-flex; align-items: center; gap: .6rem; margin-top: .35rem; }
+/* 문서 미리보기. 첫 쪽 그림을 작게 띄우고 눌러서 원본을 연다. */
+.doc-file { display: inline-block; margin-top: .35rem; }
+.doc-file a { display: inline-block; text-align: center; font-size: .8125rem; text-decoration: none; }
+.doc-file a:hover { text-decoration: underline; }
 .doc-file .thumb {
   height: 110px;
   width: auto;
+  margin-bottom: .2rem;
   border: 1px solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
 }
