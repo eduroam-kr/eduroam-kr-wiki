@@ -6,10 +6,6 @@ updated: 2026-10-04
 toc: false
 ---
 
-옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
-
-목록은 [`_data/publications.yml`](https://github.com/eduroam-kr/eduroam-kr-wiki/blob/main/_data/publications.yml) 이 정본입니다. 빠진 문서가 있으면 그 파일에 Pull Request 를 보내 주세요.
-
 {% assign groups = "회원기관,운영기관" | split: "," %}
 {%- for g in groups %}
 {%- assign rows = site.data.publications | where: "by", g %}

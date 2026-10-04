@@ -6,8 +6,6 @@ created: 2019-08-15
 toc: false
 ---
 
-옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
-
 TEIN의 Asi@Connect 사업의 일환으로 에듀롬 구축 세미나(XeAP)를 진행함
 
 ## 일시 및 장소

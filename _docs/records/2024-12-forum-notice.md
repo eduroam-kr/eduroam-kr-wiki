@@ -6,8 +6,6 @@ created: 2024-11-26
 toc: false
 ---
 
-옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
-
 2024년도 에듀롬 KR 사용자 포럼을 하기와 같이 개최합니다. 에듀롬 회원 기관의 많은 참석 부탁드립니다.
 
 2024 크레오넷 워크샵의 세션으로 개최하오니, 관심 있는 분들의 [크레오넷 워크샵 2024 등록](https://www.kreonet.net/notifications/post/notice/4694)을 부탁드립니다.

@@ -6,8 +6,6 @@ created: 2017-12-19
 toc: true
 ---
 
-옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
-
 ## 일시 및 장소
 
 일자 : 2017-12-19

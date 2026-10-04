@@ -6,8 +6,6 @@ created: 2017-11-29
 toc: false
 ---
 
-옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
-
 KROENET Workshop 2017 의 세션으로 진행된 에듀롬 사용자 논의
 
 ## 일시 및 장소

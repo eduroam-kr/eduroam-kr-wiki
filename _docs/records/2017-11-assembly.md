@@ -6,8 +6,6 @@ created: 2017-11-30
 toc: true
 ---
 
-옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다.
-
 ## 질의자
 
 대한민국 국회

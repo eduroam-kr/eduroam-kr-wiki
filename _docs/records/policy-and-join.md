@@ -6,7 +6,7 @@ updated: 2026-10-04
 toc: false
 ---
 
-옛 위키 `wiki.kreonet.net/eduroamkr` 에서 옮겼습니다. 문구는 그대로 둡니다. 2018년 문서라 지금 쓰는 것이 아닙니다 — 운영 규칙은 [국가에듀롬 운영약관]({{ '/rules/provisions/' | relative_url }}), 가입 절차는 [기관 가입 안내](https://eduroam.kreonet.net/join/) 입니다.
+2018년 문서라 지금 쓰는 것이 아닙니다 — 운영 규칙은 [국가에듀롬 운영약관]({{ '/rules/provisions/' | relative_url }}), 가입 절차는 [기관 가입 안내](https://eduroam.kreonet.net/join/) 입니다.
 
 ## 약관
 

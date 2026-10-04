@@ -22,7 +22,7 @@ permalink: /
 
 ## 연혁
 
-- [에듀롬 KR 연혁]({{ '/history/' | relative_url }}) — 옛 위키에서 옮긴 연혁
+- [에듀롬 KR 연혁]({{ '/history/' | relative_url }})
 
 ## 기록
 
