@@ -3,7 +3,7 @@ layout: default
 title: 연혁
 permalink: /history/
 ---
-<div class="container wrap py-5" markdown="1">
+<div class="container wrap py-5 doc-body" markdown="1">
 
 # 에듀롬 KR 연혁
 

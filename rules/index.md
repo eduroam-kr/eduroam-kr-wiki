@@ -3,7 +3,7 @@ layout: default
 title: 규정
 permalink: /rules/
 ---
-<div class="container wrap py-5" markdown="1">
+<div class="container wrap py-5 doc-body" markdown="1">
 
 # 규정
 

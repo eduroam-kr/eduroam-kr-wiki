@@ -4,7 +4,7 @@ title: eduroam Korea 위키
 permalink: /
 ---
 
-<div class="container wrap py-5" markdown="1">
+<div class="container wrap py-5 doc-body" markdown="1">
 
 # eduroam Korea 위키
 

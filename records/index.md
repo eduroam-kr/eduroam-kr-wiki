@@ -3,7 +3,7 @@ layout: default
 title: 기록
 permalink: /records/
 ---
-<div class="container wrap py-5" markdown="1">
+<div class="container wrap py-5 doc-body" markdown="1">
 
 # 기록
 
