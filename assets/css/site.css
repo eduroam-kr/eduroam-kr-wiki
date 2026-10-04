@@ -5,3 +5,12 @@
    눈에도 안 띄고 누르기도 어렵다. */
 .doc-body td .fa-file-pdf,
 .doc-body td .fa-file { font-size: 1.25rem; vertical-align: -.1em; }
+
+/* 문서 썸네일. 눌러서 원본을 연다. 작게 두어 글 흐름을 끊지 않는다. */
+.doc-body img.thumb {
+  height: 130px;
+  width: auto;
+  margin-top: .35rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
