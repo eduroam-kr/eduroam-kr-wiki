@@ -2,7 +2,7 @@
 title: 2019.08. XeAP in Vietnam
 section: 기록
 section_url: /records/
-updated: 2019-08-15
+created: 2019-08-15
 toc: false
 ---
 

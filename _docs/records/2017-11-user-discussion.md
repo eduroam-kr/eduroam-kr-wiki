@@ -2,7 +2,7 @@
 title: 2017.11. 에듀롬 사용자 논의
 section: 기록
 section_url: /records/
-updated: 2017-11-29
+created: 2017-11-29
 toc: false
 ---
 

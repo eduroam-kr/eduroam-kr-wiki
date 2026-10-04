@@ -2,7 +2,7 @@
 title: 2016.11. 국회 질의 대응
 section: 기록
 section_url: /records/
-updated: 2016-11-30
+created: 2016-11-30
 toc: true
 ---
 

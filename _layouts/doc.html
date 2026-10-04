@@ -8,8 +8,10 @@ layout: default
       {%- if page.section %} · <a href="{{ page.section_url | relative_url }}">{{ page.section }}</a>{% endif %}
     </nav>
     <h1>{{ page.title }}</h1>
-    {%- if page.updated %}
-    <p class="small text-body-secondary">고침 <time datetime="{{ page.updated | date: '%Y-%m-%d' }}">{{ page.updated | date: '%Y-%m-%d' }}</time>{% if page.version %} · {{ page.version }}{% endif %}</p>
+    {%- comment %} 규정은 고쳐 가며 쓰고(updated), 기록은 그날 적고 그만이다(created). {%- endcomment %}
+    {%- assign stamp = page.updated | default: page.created %}
+    {%- if stamp %}
+    <p class="small text-body-secondary">{% if page.updated %}고침{% else %}작성{% endif %} <time datetime="{{ stamp | date: '%Y-%m-%d' }}">{{ stamp | date: '%Y-%m-%d' }}</time>{% if page.version %} · {{ page.version }}{% endif %}</p>
     {%- endif %}
   </div>
   {%- if page.toc %}
