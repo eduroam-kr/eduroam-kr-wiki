@@ -15,7 +15,7 @@ permalink: /history/
 
 ## 2012년 — 대한민국이 eduroam 에 가입합니다
 
-2012년 8월 13일, KISTI 의 국가과학기술연구망 KREONET 이 **eduroam 준수 선언문**(eduroam Compliance Statement v1.0, TSec(11)043)에 서명해 제출했고 글로벌 eduroam 운영위원회(GeGC)가 이를 받아들였습니다. KREONET 이 대한민국의 국가 로밍 운영기관(NRO, National Roaming Operator)이 되고, 글로벌 eduroam 과 연결된 서비스가 국내에서 시작됩니다.
+2012년 8월 13일, KISTI 의 국가과학기술연구망 KREONET 이 **eduroam 준수 선언문**(eduroam Compliance Statement)에 서명해 제출했고 글로벌 eduroam 운영위원회(GeGC, Global eduroam Governance Committee)가 이를 받아들였습니다. KREONET 이 대한민국의 국가 로밍 운영기관(NRO, National Roaming Operator)이 되고, 글로벌 eduroam 과 연결된 서비스가 국내에서 시작됩니다.
 
 [2012-08-13 eduroam 준수 선언문 (PDF)]({{ '/assets/docs/2012-08-13-eduroam-gegc-kisti-compliance-statement.pdf' | relative_url }})
 
@@ -51,7 +51,7 @@ permalink: /history/
 
 ## 2020년 — GeGC 에 한국 대표가 들어갑니다
 
-글로벌 eduroam 의 최고 의사결정기구인 GeGC(Global eduroam Governance Committee) 위원에 전남대학교 최덕재 교수가 선임되었습니다.
+글로벌 eduroam 의 최고 의사결정기구인 GeGC 위원에 전남대학교 최덕재 교수가 선임되었습니다.
 
 ## 2021년 — NRO 서버 주소가 바뀝니다
 
