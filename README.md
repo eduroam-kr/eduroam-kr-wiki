@@ -6,8 +6,8 @@
 
 | | 무엇을 | 누가 읽나 |
 |---|---|---|
-| [공식 웹사이트](https://github.com/eduroam-kr/eduroam-kr-nro-web) | 지금 어떻게 쓰고 어떻게 가입하고 무엇을 지켜야 하나 | 이용자, 가입 희망 기관 |
-| **이 위키** | 왜 그렇게 정했고 무슨 일이 있었나 | 기관 담당자, 운영자 |
+| [공식 웹사이트](https://github.com/eduroam-kr/eduroam-kr-nro-web) | 지금 어떻게 쓰고, 어떻게 가입하고, 무엇을 지켜야 하나 | 이용자, 가입 희망 기관 |
+| **이 위키** | 왜 그렇게 정했고, 무슨 일이 있었나 | 기관 담당자, 운영자 |
 | [nro-docker](https://github.com/eduroam-kr/nro-docker) | 그 규격을 실제로 어떻게 구현하나 | 다른 NRO, 기관 엔지니어 |
 | [eduroam-kr-db](https://github.com/eduroam-kr/eduroam-kr-db) | 기관 정보의 정본 | 기계, PR 보내는 담당자 |
 | [onepage-html-site-theme](https://github.com/eduroam-kr/onepage-html-site-theme) | 참여기관 안내 페이지 템플릿 | 기관 웹 담당자 |
