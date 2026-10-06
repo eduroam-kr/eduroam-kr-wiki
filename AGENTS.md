@@ -44,12 +44,6 @@ sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' <onepage-html-s
 
 front matter 의 `description` 은 쓰지 않는다. 본문 앞부분을 잘라 쓴다.
 
-## 연결어미 뒤 쉼표는 지우지 않는다
-
-`-고,` `-며,` `-면서,` 뒤의 쉼표는 한국어에서 가독성을 올린다. AI 글 판별 규칙(im-not-ai 의 C-11)이 이걸 "쉼표 과다"로 잡지만 여기서는 따르지 않는다. 절이 긴 기술 문장에서 쉼표를 빼면 어디서 끊어 읽을지 보이지 않는다.
-
-윤문 도구를 돌릴 때 C-11 은 끈다.
-
 ## 커밋
 
 ```text
@@ -58,7 +52,7 @@ front matter 의 `description` 은 쓰지 않는다. 본문 앞부분을 잘라 
 
 `feat` 새 문서 · `fix` 고침 · `docs` 문구 · `chore` 설정·도구.
 
-- 제목에는 무엇을 왜 했는지 쓴다. "파일을 바꿈" 은 제목이 못 된다.
+- 제목에는 "파일을 바꿈" 이 아니라 "무엇을 왜" 를 쓴다.
 - `Claude-Session` 은 기재하지 않는다 (public 저장소).
 
 ## 로컬
