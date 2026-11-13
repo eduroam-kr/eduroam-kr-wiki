@@ -2,19 +2,25 @@
 title: 고지문 게시 규정
 section: 규정
 section_url: /rules/
-updated: 2026-10-03
-version: v1.0
+updated: 2026-11-13
+version: v1.0 (초안)
 ---
+
+<div class="alert alert-warning" role="note" markdown="1">
+**초안** · 이 문서는 국가에듀롬 운영위원회 구성과 대학 로밍 운영기관(RO) 협의를 위한 초안입니다. 초안 상태에서는 참여기관에 대한 효력이 없습니다. 현재 에듀롬 참여기관이 지켜야 할 사항은 eduroam Compliance Statement(GeCS) 원문([v1.0](https://www.eduroam.org/wp-content/uploads/2016/05/eduroam_Compliance_Statement_v1_0.pdf) · [v2](https://eduroam.org/wp-content/uploads/2025/07/eduroam_Compliance_Statement_v2-FINAL.pdf))을 따릅니다.
+
+고지문 게시는 GeCS 가 참여기관에 직접 요구하는 사항이 아니며, 국내 eduroam 상표를 쓰기 위해 이 규정에서 정한 것입니다. 협의를 거쳐 확정합니다.
+</div>
 
 대한민국 eduroam 의 이름으로 서비스를 제공하거나 운영하는 모든 기관은, 자기 eduroam 안내 페이지에 **참여 선언**과 **공통 고지문** 두 가지를 게시해야 합니다.
 
-## 왜 게시하나
+## 게시 목적
 
-eduroam 과 eduroam 로고는 GÉANT Association 의 등록상표이고, 국내 상표권은 한국과학기술정보연구원(KISTI)이 보유합니다(상표등록 제40-1190084호). 이름을 쓰는 쪽이 누구의 권리로 무엇을 하고 있는지 밝히는 것이 상표를 쓰는 조건입니다.
+eduroam 과 eduroam 로고는 GÉANT Association 의 등록상표이고, 국내 상표권은 한국과학기술정보연구원(KISTI)이 보유합니다(상표등록 제40-1190084호). 이름을 쓰는 쪽이 누구의 권리로 무엇을 하고 있는지 밝혀 두면, 이용자가 공식 서비스를 알아볼 수 있습니다.
 
-eduroam Compliance Statement 4.8 도 로밍 운영기관이 참여기관 정보와 지원 연락처를 웹에 공개하도록 정합니다. 참여기관 쪽 게시가 그 정보의 출발점입니다.
+eduroam Compliance Statement 도 로밍 운영기관이 참여기관 정보와 지원 연락처를 웹에 공개하도록 정합니다(v1.0 4.8, v2 3.8). 참여기관 쪽 게시가 그 정보의 출발점입니다.
 
-## 누가 무엇을 싣나
+## 게시 주체와 내용
 
 역할에 따라 **선언 문장만** 달라집니다. 공통 고지문은 세 역할 모두 원문 그대로입니다.
 
@@ -26,7 +32,9 @@ eduroam Compliance Statement 4.8 도 로밍 운영기관이 참여기관 정보�
 
 기관명 뒤 조사는 받침에 맞게 고칩니다 — `예제연구소는`, `한국과학기술정보연구원은`.
 
-## 게시 요건
+## 게시 방법 (권고)
+
+게시할 때는 아래를 따르기를 권고합니다. 권리주체와 공식 서비스 정보를 사용자가 확인하도록 하기 위함입니다.
 
 - 글자 크기 **14px(0.875rem) 이상**
 - **배경과 구분되는 색**으로 둡니다. 배경 대비 **4.5:1 이상**(WCAG 2.1 AA)이어야 합니다. 배경과 같거나 비슷한 색, 아주 옅은 회색, `opacity`·`filter` 로 흐리게 하기처럼 **읽히지 않게 만드는 방법은 모두 숨긴 것으로 봅니다.** 링크는 밑줄을 유지합니다
@@ -57,6 +65,6 @@ eduroam Compliance Statement 4.8 도 로밍 운영기관이 참여기관 정보�
 
 [onepage-html-site-theme](https://github.com/eduroam-kr/onepage-html-site-theme) 을 쓰면 위 블록이 이미 들어 있습니다. 기관명 한 군데만 바꾸면 됩니다.
 
-## 지키지 않으면
+## 게시하지 않은 기관
 
-NRO 가 시정을 요구하고, 이행되지 않으면 해당 realm 의 로밍을 중단할 수 있습니다. 근거는 eduroam Compliance Statement 4.9 와 5.1 입니다 — 로밍 운영기관은 자기 나라의 IdP·SP 가 규칙을 지키도록 해야 하고, 지키지 않는 것이 확인되면 적절한 조치를 취하도록 되어 있습니다.
+이 규정은 초안이며, 초안 상태에서 고지문 게시는 권고 사항입니다. NRO 는 게시하지 않은 기관에 게시를 요청하고, 안내 페이지 작성에 필요한 도움을 드립니다.

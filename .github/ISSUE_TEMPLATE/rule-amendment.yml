@@ -1,0 +1,45 @@
+name: 규정 개정 의견
+description: 국가에듀롬 운영약관 등 규정 초안에 대한 의견을 남깁니다.
+title: "[규정 의견] "
+labels: ["규정 개정"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        규정은 모두 초안이며, 국가에듀롬 운영위원회 구성과 대학 로밍 운영기관(RO) 협의를 거쳐 확정합니다.
+        여기 남긴 의견과 처리 결과는 개정안과 함께 공개합니다. 보안 사고나 특정 기관의 취약점처럼 공개하면 안 되는 내용은 이슈로 올리지 말고 NRO 에 메일로 보내 주세요.
+  - type: dropdown
+    id: document
+    attributes:
+      label: 대상 문서
+      options:
+        - 국가에듀롬 운영약관
+        - 고지문 게시 규정
+        - 로밍 운영기관(RO) 운영 요건
+        - 국가에듀롬 운영위원회 규정
+        - 운영약관 조항별 근거표
+        - 기타
+    validations:
+      required: true
+  - type: input
+    id: clause
+    attributes:
+      label: 조항
+      description: 조항 번호를 적습니다. 여러 개면 쉼표로 나눕니다. 새 조항을 제안하면 "신설" 이라고 적습니다.
+      placeholder: "예: 1.4.2, 4.5.2 (3)"
+    validations:
+      required: true
+  - type: textarea
+    id: opinion
+    attributes:
+      label: 의견
+      description: 무엇을 왜 바꾸어야 하는지 적습니다. 고칠 문구를 제안하면 함께 적습니다. GeCS 등 근거가 있으면 조항 번호를 적습니다.
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: 소속기관
+      description: 의견을 낸 기관입니다. 개인 의견이면 "개인" 이라고 적습니다.
+    validations:
+      required: true

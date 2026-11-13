@@ -2,12 +2,18 @@
 title: 로밍 운영기관(RO) 운영 요건
 section: 규정
 section_url: /rules/
-updated: 2026-10-04
-version: v1.0
+updated: 2026-11-13
+version: v1.0 (초안)
 toc: true
 ---
 
-[국가에듀롬 운영약관]({{ '/rules/provisions/' | relative_url }}) 1.2 가 RO 를 둘 수 있다고 정하지만, RO 가 무엇을 갖추어야 하는지는 적지 않습니다. 약관에 IdP(부록 A)·SP(부록 B)·NRO(부록 C) 의 준수 사항은 있어도 RO 의 것은 없습니다. 이 문서가 그 자리를 채웁니다.
+<div class="alert alert-warning" role="note" markdown="1">
+**초안** · 이 문서는 국가에듀롬 운영위원회 구성과 대학 로밍 운영기관(RO) 협의를 위한 초안입니다. 초안 상태에서는 참여기관과 RO 에 대한 효력이 없습니다. 현재 에듀롬 참여기관이 지켜야 할 사항은 eduroam Compliance Statement(GeCS) 원문([v1.0](https://www.eduroam.org/wp-content/uploads/2016/05/eduroam_Compliance_Statement_v1_0.pdf) · [v2](https://eduroam.org/wp-content/uploads/2025/07/eduroam_Compliance_Statement_v2-FINAL.pdf))을 따릅니다.
+
+GeCS 의 RO 는 나라 단위 운영기관, 곧 국내의 NRO 를 말합니다. 대학 RO 는 NRO 를 대리하므로, 아래에서 "근거: GeCS" 로 표시한 항목은 NRO 가 GeCS 에 따라 지는 의무를 부문 범위에서 나누어 맡는 부분입니다. GeCS 에 근거가 없는 항목은 "협의 예정" 으로 표시했습니다. 조항 번호는 GeCS v2 기준이며, v1.0 과의 대응은 [조항별 근거표]({{ '/rules/provisions-gecs-map/' | relative_url }})에 있습니다.
+</div>
+
+[국가에듀롬 운영약관]({{ '/rules/provisions/' | relative_url }})(초안) 1.2 가 RO 를 둘 수 있다고 정하지만, RO 가 무엇을 갖추어야 하는지는 적지 않습니다. 약관에 IdP(부록 A)·SP(부록 B)·NRO(부록 C) 의 준수 사항은 있어도 RO 의 것은 없습니다. 이 문서가 그 자리를 채웁니다.
 
 ## 누가 지켜야 하나
 
@@ -22,15 +28,15 @@ RO 는 자기 부문 안에서 NRO 를 대리합니다. 그래서 NRO 에게 요
 
 ## 1. RADIUS 기반시설
 
-1.1. RO 는 부문에듀롬기반시설로 RADIUS 프록시를 운영한다. 참여기관과 NRO 양쪽에 붙는다.
+1.1. RO 는 부문에듀롬기반시설로 RADIUS 프록시를 운영한다. 참여기관과 NRO 양쪽에 붙는다. <small class="text-body-secondary">(근거: GeCS v2 2.4)</small>
 
-1.2. RADIUS 프록시는 이중화한다. 한 대가 멎어도 부문 전체의 인증이 멎지 않아야 한다.
+1.2. RADIUS 프록시는 이중화한다. 한 대가 멎어도 부문 전체의 인증이 멎지 않아야 한다. <small class="text-body-secondary">(협의 예정)</small>
 
-1.3. realm 라우팅은 **명시한 realm 만** 올려보낸다. 정규식으로 `*.ac.kr` 같이 싸잡아 넘기지 않는다. 목록에 없는 realm 을 되돌려 보내면 NRO 와 RO 사이에서 요청이 맴돈다([2017.12. 운영정책 세미나]({{ '/records/2017-12-policy-seminar/' | relative_url }})에서 실제로 겪은 문제다).
+1.3. realm 라우팅은 **명시한 realm 만** 올려보낸다. 정규식으로 `*.ac.kr` 같이 싸잡아 넘기지 않는다. 목록에 없는 realm 을 되돌려 보내면 NRO 와 RO 사이에서 요청이 맴돈다([2017.12. 운영정책 세미나]({{ '/records/2017-12-policy-seminar/' | relative_url }})에서 실제로 겪은 문제다). <small class="text-body-secondary">(협의 예정)</small>
 
-1.4. 참여기관이 realm 을 더하거나 뺀 날로부터 **근무일 기준 3일 안에** 자기 라우팅과 NRO 쪽 정보에 반영한다.
+1.4. 참여기관이 realm 을 더하거나 뺀 날로부터 **근무일 기준 3일 안에** 자기 라우팅과 NRO 쪽 정보에 반영한다. <small class="text-body-secondary">(협의 예정)</small>
 
-1.5. 서버 주소·공유키를 바꾸기 전에 참여기관과 NRO 에 **최소 2주 전** 알린다. 긴급 보안 조치는 예외로 하되 사후에 알린다.
+1.5. 서버 주소·공유키를 바꾸기 전에 참여기관과 NRO 에 **최소 2주 전** 알린다. 긴급 보안 조치는 예외로 하되 사후에 알린다. <small class="text-body-secondary">(협의 예정)</small>
 
 1.6. 구현 예시는 [nro-docker](https://github.com/eduroam-kr/nro-docker) 에 있다.
 
@@ -38,37 +44,37 @@ RO 는 자기 부문 안에서 NRO 를 대리합니다. 그래서 NRO 에게 요
 
 접속 요청이 어느 기관에서 왔는지는 `Operator-Name`([RFC 5580](https://www.rfc-editor.org/rfc/rfc5580) 4.1) 하나로 드러납니다. 이게 없으면 IdP 는 자기 이용자가 어디서 접속했는지 알 수 없고, 사고가 났을 때 되짚을 수 없습니다.
 
-2.1. SP 는 자기가 보내는 Access-Request 에 `Operator-Name` 을 넣는다. 값은 네임스페이스 `1`(REALM) 뒤에 자기 realm 을 붙인 꼴이다.
+2.1. SP 는 자기가 보내는 Access-Request 에 `Operator-Name` 을 넣는다. 값은 네임스페이스 `1`(REALM) 뒤에 자기 realm 을 붙인 꼴이다. <small class="text-body-secondary">(근거: GeCS v2 B.10 (권고))</small>
 
 ```text
 Operator-Name = "1example.ac.kr"
 ```
 
-2.2. **기관이 넣지 못하면 RO 가 자기 프록시에서 붙인다.** 장비가 오래되었거나 설정을 바꿀 수 없는 기관이 적지 않다. 그런 기관 때문에 부문 전체의 추적이 끊기지 않게 한다.
+2.2. **기관이 넣지 못하면 RO 가 자기 프록시에서 붙인다.** 장비가 오래되었거나 설정을 바꿀 수 없는 기관이 적지 않다. 그런 기관 때문에 부문 전체의 추적이 끊기지 않게 한다. <small class="text-body-secondary">(근거: GeCS v2 B.10 (RO 가 붙일 수 있음))</small>
 
-2.3. RO 가 붙일 때는 **요청을 보낸 그 기관의 realm** 을 쓴다. RO 자신의 realm 을 쓰지 않는다. 그러려면 RADIUS 클라이언트마다 어느 기관인지 적어 두어야 한다.
+2.3. RO 가 붙일 때는 **요청을 보낸 그 기관의 realm** 을 쓴다. RO 자신의 realm 을 쓰지 않는다. 그러려면 RADIUS 클라이언트마다 어느 기관인지 적어 두어야 한다. <small class="text-body-secondary">(협의 예정)</small>
 
-2.4. 이미 들어 있는 `Operator-Name` 은 덮어쓰지 않는다. 기관이 제대로 넣은 값을 RO 가 지우면 거짓 정보가 된다.
+2.4. 이미 들어 있는 `Operator-Name` 은 덮어쓰지 않는다. 기관이 제대로 넣은 값을 RO 가 지우면 거짓 정보가 된다. <small class="text-body-secondary">(협의 예정)</small>
 
-2.5. RO 는 자기 부문에서 `Operator-Name` 이 빠진 기관을 파악하고, 기관이 직접 넣도록 안내한다. RO 가 대신 붙이는 것은 임시 조치다.
+2.5. RO 는 자기 부문에서 `Operator-Name` 이 빠진 기관을 파악하고, 기관이 직접 넣도록 안내한다. RO 가 대신 붙이는 것은 임시 조치다. <small class="text-body-secondary">(협의 예정)</small>
 
 ## 3. 로깅
 
-3.1. RO 는 자기 RADIUS 프록시의 인증 로그를 **6개월 이상** 안전하게 보관한다.
+3.1. RO 는 자기 RADIUS 프록시의 인증 로그를 **6개월 이상** 안전하게 보관한다. <small class="text-body-secondary">(근거: GeCS v2 2.3 · 보관 기간은 협의 예정)</small>
 
-3.2. 로그에는 다음을 남긴다 — timestamp, 바깥 identity, realm, 기기 MAC 주소, SP 서버, `Operator-Name`, 인증 결과.
+3.2. 로그에는 다음을 남긴다 — timestamp, 바깥 identity, realm, 기기 MAC 주소, SP 서버, `Operator-Name`, 인증 결과. <small class="text-body-secondary">(근거: GeCS v2 2.3 · 항목은 협의 예정)</small>
 
-3.3. **비밀번호는 어떤 형태로도 남기지 않는다.**
+3.3. **비밀번호는 어떤 형태로도 남기지 않는다.** <small class="text-body-secondary">(협의 예정)</small>
 
-3.4. NRO 가 사고 조사를 위해 요청하면 근무일 기준 3일 안에 해당 구간의 로그를 제공한다.
+3.4. NRO 가 사고 조사를 위해 요청하면 근무일 기준 3일 안에 해당 구간의 로그를 제공한다. <small class="text-body-secondary">(근거: GeCS v2 2.3 · 3.9 · 기한은 협의 예정)</small>
 
 # 정책 요구사항
 
 ## 4. 연락처와 소통
 
-4.1. RO 는 사람 이름이 아닌 **역할 주소**를 둔다. 담당자가 바뀌어도 주소는 그대로여야 한다.
+4.1. RO 는 사람 이름이 아닌 **역할 주소**를 둔다. 담당자가 바뀌어도 주소는 그대로여야 한다. <small class="text-body-secondary">(협의 예정)</small>
 
-4.2. 다음 세 창구를 각각 둔다.
+4.2. 다음 세 창구를 각각 둔다. <small class="text-body-secondary">(근거: GeCS v2 3.5 · 3.7 · 3.8.3)</small>
 
 | 창구 | 상대 | 쓰임 |
 |---|---|---|
@@ -76,23 +82,23 @@ Operator-Name = "1example.ac.kr"
 | 참여기관 창구 | 자기 부문의 참여기관 | 가입, 설정 문의, 장애 접수 |
 | 공개 지원 연락처 | 최종 이용자 | 웹페이지에 싣는 주소 |
 
-4.3. 근무일 기준 **2일 안에** 응답한다. 보안 사고는 **당일** 응답한다.
+4.3. 근무일 기준 **2일 안에** 응답한다. 보안 사고는 **당일** 응답한다. <small class="text-body-secondary">(근거: GeCS v2 3.5 · 기한은 협의 예정)</small>
 
-4.4. NRO 의 운영 메일링리스트에 가입하고, 자기 부문 참여기관에게도 전달한다.
+4.4. NRO 의 운영 메일링리스트에 가입하고, 자기 부문 참여기관에게도 전달한다. <small class="text-body-secondary">(근거: GeCS v2 3.7)</small>
 
-4.5. 연락처가 바뀌면 바뀐 날 NRO 에 알린다.
+4.5. 연락처가 바뀌면 바뀐 날 NRO 에 알린다. <small class="text-body-secondary">(근거: GeCS v2 3.5)</small>
 
 ## 5. 참여기관 연락처는 NRO 도 가진다
 
 RO 를 통해 가입한 기관이라도 **NRO 가 그 기관의 연락처를 알고 있어야 합니다.** 글로벌에듀롬과 해외 NRO 는 국가 단위로 연락합니다. 보안 사고나 해외에서 온 조회가 들어왔을 때 NRO 가 RO 를 거쳐야만 기관에 닿을 수 있다면, 그 시간만큼 대응이 늦습니다. RO 가 응답하지 못하는 시간대나 상황도 있습니다.
 
-5.1. RO 는 자기 부문 참여기관의 연락처를 NRO 에 전달한다. 약관 4.3 이 참여기관에게 요구하는 것과 같은 범위다 — 기술담당자 2인(하나는 그룹 주소 권장), 보안담당자 1인, 관리담당자 1인.
+5.1. RO 는 자기 부문 참여기관의 연락처를 NRO 에 전달한다. 약관 4.3 이 참여기관에게 요구하는 것과 같은 범위다 — 기술담당자 2인(하나는 그룹 주소 권장), 보안담당자 1인, 관리담당자 1인. <small class="text-body-secondary">(근거: GeCS v2 3.5)</small>
 
-5.2. 기관이 가입한 날, 그리고 연락처가 바뀐 날 전달한다.
+5.2. 기관이 가입한 날, 그리고 연락처가 바뀐 날 전달한다. <small class="text-body-secondary">(근거: GeCS v2 3.5)</small>
 
-5.3. RO 를 거치는 것은 전달 경로일 뿐이다. **RO 가 연락 창구를 독점하지 않는다.** NRO 는 필요할 때 기관에 직접 연락할 수 있다.
+5.3. RO 를 거치는 것은 전달 경로일 뿐이다. **RO 가 연락 창구를 독점하지 않는다.** NRO 는 필요할 때 기관에 직접 연락할 수 있다. <small class="text-body-secondary">(협의 예정)</small>
 
-5.4. 연락처를 공개할지는 주소의 성격이 아니라 **그 기관이 이미 공개했는가**로 가른다.
+5.4. 연락처를 공개할지는 주소의 성격이 아니라 **그 기관이 이미 공개했는가**로 가른다. <small class="text-body-secondary">(협의 예정)</small>
 
 | | 보기 | 어디까지 |
 |---|---|---|
@@ -101,53 +107,53 @@ RO 를 통해 가입한 기관이라도 **NRO 가 그 기관의 연락처를 알
 
 국내에는 메일링리스트나 대표 주소를 두는 기관이 드뭅니다. 실제로는 담당자의 업무 메일과 전화번호를 **이름 없이** 안내 페이지에 적어 두는 쪽이 흔합니다. 기관이 스스로 그렇게 내놓은 것은 공개된 정보로 봅니다. 숨길 일이 아니라 — 숨기면 문의가 엉뚱한 곳으로 가고, 사고가 났을 때 연락할 데가 없습니다.
 
-5.5. **사람 이름은 싣지 않는다.** 기관명과 부서명까지만 적는다. 기관이 자기 페이지에 이름을 함께 적어 두었더라도 옮기지 않는다. 연락에는 주소만으로 충분하고, 사람이 바뀌면 이름부터 틀린 정보가 된다.
+5.5. **사람 이름은 싣지 않는다.** 기관명과 부서명까지만 적는다. 기관이 자기 페이지에 이름을 함께 적어 두었더라도 옮기지 않는다. 연락에는 주소만으로 충분하고, 사람이 바뀌면 이름부터 틀린 정보가 된다. <small class="text-body-secondary">(협의 예정)</small>
 
-5.6. 기관이 공개를 거두면 따라서 뺀다. 안내 페이지에서 그 주소가 내려갔거나 기관이 빼 달라고 하면, 알게 된 날 [eduroam-kr-db](https://github.com/eduroam-kr/eduroam-kr-db) 에서도 뺀다.
+5.6. 기관이 공개를 거두면 따라서 뺀다. 안내 페이지에서 그 주소가 내려갔거나 기관이 빼 달라고 하면, 알게 된 날 [eduroam-kr-db](https://github.com/eduroam-kr/eduroam-kr-db) 에서도 뺀다. <small class="text-body-secondary">(협의 예정)</small>
 
-5.7. 역할 주소를 두기를 권한다. 담당자 업무 주소를 창구로 쓰면 그 사람이 떠나는 날 연락이 끊긴다. 약관 4.3.1 이 기술담당자 둘 중 하나를 그룹 주소로 둘 것을 권하는 까닭이다. 다만 역할 주소가 없다고 해서 5.4 의 공개를 미루지는 않는다.
+5.7. 역할 주소를 두기를 권한다. 담당자 업무 주소를 창구로 쓰면 그 사람이 떠나는 날 연락이 끊긴다. 약관 4.3.1 이 기술담당자 둘 중 하나를 그룹 주소로 둘 것을 권하는 까닭이다. 다만 역할 주소가 없다고 해서 5.4 의 공개를 미루지는 않는다. <small class="text-body-secondary">(협의 예정)</small>
 
-5.8. 5.4 의 아래 칸에 해당하는 연락처는 NRO 가 따로 정한 경로로 전달한다. 공개 저장소에 Pull Request 로 올리지 않는다.
+5.8. 5.4 의 아래 칸에 해당하는 연락처는 NRO 가 따로 정한 경로로 전달한다. 공개 저장소에 Pull Request 로 올리지 않는다. <small class="text-body-secondary">(협의 예정)</small>
 
 ## 6. 참여기관 관리
 
-6.1. RO 는 자기 부문의 가입 자격을 약관 2.3·2.4 에 따라 판단한다. 약관보다 느슨하게 적용할 수 없다.
+6.1. RO 는 자기 부문의 가입 자격을 약관 2.3·2.4 에 따라 판단한다. 약관보다 느슨하게 적용할 수 없다. <small class="text-body-secondary">(근거: GeCS v2 3.3 · 3.4)</small>
 
-6.2. 참여기관 정보는 [eduroam-kr-db](https://github.com/eduroam-kr/eduroam-kr-db) 에 제출한다. 기관명, realm, 서비스 지역, 안내 페이지 주소(`info_url`), 가입 연도, 그리고 5.4 에 따라 공개할 수 있는 연락처를 포함한다.
+6.2. 참여기관 정보는 [eduroam-kr-db](https://github.com/eduroam-kr/eduroam-kr-db) 에 제출한다. 기관명, realm, 서비스 지역, 안내 페이지 주소(`info_url`), 가입 연도, 그리고 5.4 에 따라 공개할 수 있는 연락처를 포함한다. <small class="text-body-secondary">(근거: GeCS v2 3.5 · 3.8.2)</small>
 
-6.3. 참여기관이 약관을 어긴 것을 알게 되면 해당 기관에 알리고 기한을 정해 고치게 한다. 기한 내에 고쳐지지 않으면 NRO 에 알린다.
+6.3. 참여기관이 약관을 어긴 것을 알게 되면 해당 기관에 알리고 기한을 정해 고치게 한다. 기한 내에 고쳐지지 않으면 NRO 에 알린다. <small class="text-body-secondary">(근거: GeCS v2 4.2)</small>
 
-6.4. 참여기관이 탈퇴하거나 자격을 잃으면 **그날** 라우팅에서 빼고 NRO 에 알린다.
+6.4. 참여기관이 탈퇴하거나 자격을 잃으면 **그날** 라우팅에서 빼고 NRO 에 알린다. <small class="text-body-secondary">(협의 예정)</small>
 
-6.5. 참여기관의 안내 페이지가 약관 4.5 와 [고지문 게시 규정]({{ '/rules/notice/' | relative_url }})을 지키는지 **연 1회 이상** 확인한다.
+6.5. 참여기관의 안내 페이지가 약관 4.5 와 [고지문 게시 규정]({{ '/rules/notice/' | relative_url }})을 지키는지 **연 1회 이상** 확인한다. <small class="text-body-secondary">(협의 예정)</small>
 
 ## 7. RO 웹페이지
 
-7.1. RO 는 자기 eduroam 웹페이지를 둔다. 주소는 바뀌지 않는 곳으로 정하고 NRO 에 알린다.
+7.1. RO 는 자기 eduroam 웹페이지를 둔다. 주소는 바뀌지 않는 곳으로 정하고 NRO 에 알린다. <small class="text-body-secondary">(근거: GeCS v2 3.8)</small>
 
-7.2. **HTTPS 로만** 제공한다. HTTP 로 들어온 요청은 HTTPS 로 넘긴다.
+7.2. **HTTPS 로만** 제공한다. HTTP 로 들어온 요청은 HTTPS 로 넘긴다. <small class="text-body-secondary">(협의 예정)</small>
 
-7.3. 다음을 게재한다.
+7.3. 다음을 게재한다. <small class="text-body-secondary">(근거: GeCS v2 3.8 · 항목별 표시)</small>
 
-(1) 국가에듀롬 운영약관의 준수 — [약관]({{ '/rules/provisions/' | relative_url }}) 링크를 포함한다
+(1) 국가에듀롬 운영약관의 준수 — [약관]({{ '/rules/provisions/' | relative_url }}) 링크를 포함한다 <small class="text-body-secondary">(협의 예정)</small>
 
-(2) 자기 부문의 참여기관 목록 또는 서비스 지역 지도 — 각 기관의 안내 페이지로 링크한다
+(2) 자기 부문의 참여기관 목록 또는 서비스 지역 지도 — 각 기관의 안내 페이지로 링크한다 <small class="text-body-secondary">(근거: GeCS v2 3.8.2)</small>
 
-(3) 가입 절차와 가입 문의 창구
+(3) 가입 절차와 가입 문의 창구 <small class="text-body-secondary">(협의 예정)</small>
 
-(4) 공개 지원 연락처 (4.2 의 셋째)
+(4) 공개 지원 연락처 (4.2 의 셋째) <small class="text-body-secondary">(근거: GeCS v2 3.8.3)</small>
 
-(5) [대한민국 eduroam 공식 웹사이트](https://eduroam.kreonet.net) 링크
+(5) [대한민국 eduroam 공식 웹사이트](https://eduroam.kreonet.net) 링크 <small class="text-body-secondary">(협의 예정)</small>
 
-(6) 참여 선언과 공통 고지문 — [고지문 게시 규정]({{ '/rules/notice/' | relative_url }})
+(6) 참여 선언과 공통 고지문 — [고지문 게시 규정]({{ '/rules/notice/' | relative_url }}) <small class="text-body-secondary">(권고)</small>
 
-7.4. 검색에 걸려야 한다. `<meta name="robots" content="noindex">` 를 두거나 `robots.txt` 로 막지 않는다. 고지문을 읽히지 않게 만드는 것과 같은 일로 본다.
+7.4. 검색에 걸려야 한다. `<meta name="robots" content="noindex">` 를 두거나 `robots.txt` 로 막지 않는다. 고지문을 읽히지 않게 만드는 것과 같은 일로 본다. <small class="text-body-secondary">(협의 예정)</small>
 
 ## 8. HTML `<head>` 요건
 
 RO 와 참여기관의 eduroam 페이지는 아래를 갖춥니다. 사람이 읽는 본문만큼이나 기계가 읽는 머리도 맞아야, 검색과 메신저 미리보기에서 그 페이지가 무엇인지 드러납니다.
 
-### 8.1. 필수
+### 8.1. 필수 <small class="text-body-secondary">(협의 예정)</small>
 
 | 태그 | 값 |
 |---|---|
@@ -196,29 +202,29 @@ sed -n '/<head>/,/<\/head>/p' index.html
 
 ## 9. 상표와 고지문
 
-9.1. RO 는 eduroam 이름과 로고를 쓸 때 [고지문 게시 규정]({{ '/rules/notice/' | relative_url }})을 지킨다. RO 용 참여 선언 문장이 그 문서에 있다.
+9.1. RO 는 eduroam 이름과 로고를 쓸 때 [고지문 게시 규정]({{ '/rules/notice/' | relative_url }})을 지킨다. RO 용 참여 선언 문장이 그 문서에 있다. <small class="text-body-secondary">(권고, 고지문 게시 규정 초안)</small>
 
-9.2. RO 는 eduroam 을 자기 브랜드로 다시 포장하지 않는다. 별도 이름을 붙인 파생 브랜드를 만들지 않는다([연혁]({{ '/history/' | relative_url }}) 2012–2015년 참조).
+9.2. RO 는 eduroam 을 자기 브랜드로 다시 포장하지 않는다. 별도 이름을 붙인 파생 브랜드를 만들지 않는다([연혁]({{ '/history/' | relative_url }}) 2012–2015년 참조). <small class="text-body-secondary">(협의 예정)</small>
 
-9.3. RO 는 자기 부문 참여기관이 9.1 을 지키는지 6.5 에 따라 확인한다.
+9.3. RO 는 자기 부문 참여기관이 9.1 을 지키는지 6.5 에 따라 확인한다. <small class="text-body-secondary">(협의 예정)</small>
 
 # 점검표
 
-| | 항목 | 근거 |
-|---|---|---|
-| ☐ | RADIUS 프록시 이중화 | 1.2 |
-| ☐ | 명시한 realm 만 라우팅 | 1.3 |
-| ☐ | `Operator-Name` 이 모든 요청에 들어감 | 2.1, 2.2 |
-| ☐ | 기관 realm 으로 붙이고 기존 값은 보존 | 2.3, 2.4 |
-| ☐ | 인증 로그 6개월, 비밀번호 제외 | 3.1, 3.3 |
-| ☐ | 역할 주소 세 창구 | 4.1, 4.2 |
-| ☐ | 참여기관 연락처를 NRO 에 전달 | 5.1, 5.2 |
-| ☐ | 기관이 공개한 연락처만 싣고 그 밖은 따로 전달 | 5.4, 5.8 |
-| ☐ | 사람 이름은 싣지 않음 | 5.5 |
-| ☐ | 참여기관 정보를 eduroam-kr-db 에 제출 | 6.2 |
-| ☐ | 참여기관 안내 페이지 연 1회 점검 | 6.5 |
-| ☐ | RO 웹페이지 HTTPS, 여섯 항목 게재 | 7.2, 7.3 |
-| ☐ | `noindex` 없음 | 7.4 |
-| ☐ | `<head>` 필수 여덟 항목 | 8.1 |
-| ☐ | 공통 메타 두 줄 그대로 | 8.2 |
-| ☐ | 참여 선언과 공통 고지문 | 9.1 |
+| | 항목 | 조항 | GeCS 근거 |
+|---|---|---|---|
+| ☐ | RADIUS 프록시 이중화 | 1.2 | 협의 예정 |
+| ☐ | 명시한 realm 만 라우팅 | 1.3 | 협의 예정 |
+| ☐ | `Operator-Name` 이 모든 요청에 들어감 | 2.1, 2.2 | v2 B.10 |
+| ☐ | 기관 realm 으로 붙이고 기존 값은 보존 | 2.3, 2.4 | 협의 예정 |
+| ☐ | 인증 로그 6개월, 비밀번호 제외 | 3.1, 3.3 | v2 2.3 (기간 · 비밀번호는 협의 예정) |
+| ☐ | 역할 주소 세 창구 | 4.1, 4.2 | v2 3.5 · 3.7 · 3.8.3 |
+| ☐ | 참여기관 연락처를 NRO 에 전달 | 5.1, 5.2 | v2 3.5 |
+| ☐ | 기관이 공개한 연락처만 싣고 그 밖은 따로 전달 | 5.4, 5.8 | 협의 예정 |
+| ☐ | 사람 이름은 싣지 않음 | 5.5 | 협의 예정 |
+| ☐ | 참여기관 정보를 eduroam-kr-db 에 제출 | 6.2 | v2 3.5 · 3.8.2 |
+| ☐ | 참여기관 안내 페이지 연 1회 점검 | 6.5 | 협의 예정 |
+| ☐ | RO 웹페이지 HTTPS, 여섯 항목 게재 | 7.2, 7.3 | v2 3.8 (HTTPS 는 협의 예정) |
+| ☐ | `noindex` 없음 | 7.4 | 협의 예정 |
+| ☐ | `<head>` 필수 여덟 항목 | 8.1 | 협의 예정 |
+| ☐ | 공통 메타 두 줄 그대로 | 8.2 | 협의 예정 |
+| ☐ | 참여 선언과 공통 고지문 | 9.1 | 권고 |

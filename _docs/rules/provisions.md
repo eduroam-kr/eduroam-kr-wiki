@@ -1,12 +1,20 @@
 ---
 title: 국가에듀롬 운영약관
-version: v1.2
-updated: 2026-10-27
+version: v1.2 (초안)
+updated: 2026-11-13
 section: 규정
 section_url: /rules/
 ---
 
-**eduroam KR NRO Provisions v1.2**
+<div class="alert alert-warning" role="note" markdown="1">
+**초안** · 이 문서는 국가에듀롬 운영위원회 구성과 대학 로밍 운영기관(RO) 협의를 위한 초안입니다. 초안 상태에서는 참여기관에 대한 효력이 없습니다. 현재 에듀롬 참여기관이 지켜야 할 사항은 eduroam Compliance Statement(GeCS) 원문([v1.0](https://www.eduroam.org/wp-content/uploads/2016/05/eduroam_Compliance_Statement_v1_0.pdf) · [v2](https://eduroam.org/wp-content/uploads/2025/07/eduroam_Compliance_Statement_v2-FINAL.pdf))을 따릅니다.
+
+이 초안의 대부분은 GeCS의 필수사항을 국문으로 옮긴 것이므로, 영문 원문이 익숙하지 않은 분은 GeCS의 국문 참고 자료로 보셔도 됩니다. 다만 인증정보 관리(3.1.8), 고지문 게시(1.5.3, 4.5.1(5)), 연결을 동의로 간주하는 방식(1.4.2), 공중 Wi-Fi 사업자 조항(2.4.5)은 국내 운영을 위해 덧붙인 부분으로, 협의를 거쳐 확정합니다.
+
+조항마다 GeCS 근거와 국내 추가 여부는 [조항별 근거표]({{ '/rules/provisions-gecs-map/' | relative_url }})에 있습니다.
+</div>
+
+**eduroam KR NRO Provisions v1.2 (Draft)**
 
 대한민국 eduroam(이하 **국가에듀롬**)의 국가 로밍 운영기관(NRO)과 참여기관이 지켜야 할 규칙을 정합니다. 이 약관은 GÉANT 가 정한 [eduroam Compliance Statement](https://eduroam.org/support/eduroam-documentation/)(GeCS)의 필수사항을 만족합니다.
 
@@ -17,6 +25,7 @@ section_url: /rules/
 
 | 판 | 일자 | 비고 |
 |---|---|---|
+| v1.2 (초안) | 2026-11-13 | 초안으로 전환. 개정 절차(1.4.5 ~ 1.4.7)가 정한 국가에듀롬 운영위원회가 아직 구성되지 않았으므로, 운영위원회 구성과 대학 RO 협의를 거쳐 확정하기로 함. 참여기관이 지켜야 할 사항은 GeCS 원문을 따름. 조항 내용은 바꾸지 않음 |
 | v1.2 | 2026-10-27 | 3.1.8 (1) 금지 대상을 공개된 값에서 그 값으로 유추할 수 있는 값까지 넓히고, 기관이 정하는 초기 비밀번호는 무작위 값으로 생성하도록 함. IdP 안내 페이지에 CA 인증서 · SHA-256 지문 · 서버 이름 게시와 사용자 확인 안내를 의무화(4.5.2). RO 를 통한 간접 연결도 약관 동의로 간주함을 명시(1.4.2) |
 | v1.1 | 2026-10-03 | 3.1.8 인증정보 관리 신설. IdP+SP 참가자격에서 NREN 회원 제한 삭제(2.3.1), SP-Only 참가자격에 종류 제한이 없음을 명시하고 공중 Wi-Fi 사업자 조항 신설(2.4.1, 2.4.5) |
 | v1.0 | 2026-10-03 | 확정. 대학 로밍 운영기관 변경(KREN), 상표 등록 반영, 연락처·정보 제출 경로 현행화 |
@@ -505,7 +514,9 @@ C.4. NRO 의 국가에듀롬 운영목표는 다음 과업을 달성하는 것�
 
 - Global eduroam Governance, GÉANT(TERENA), 2010-09-22
 - Global eduroam Governance Committee Charter v2.0, 2016-12-09
-- [eduroam Compliance Statement v1.0](https://eduroam.org/support/eduroam-documentation/), GÉANT(TERENA) TSec(11)043, 2011-10-04
+- [eduroam Compliance Statement v1.0](https://www.eduroam.org/wp-content/uploads/2016/05/eduroam_Compliance_Statement_v1_0.pdf), GÉANT(TERENA) TSec(11)043, 2011-10-04
+- [eduroam Compliance Statement v2](https://eduroam.org/wp-content/uploads/2025/07/eduroam_Compliance_Statement_v2-FINAL.pdf), GÉANT, 2025
+- [How to support end users](https://wiki.geant.org/display/H2eduroam/How+to+support+to+end+users), GÉANT eduroam 운영 가이드
 - [RFC 7593 — The eduroam Architecture for Network Roaming](https://www.rfc-editor.org/rfc/rfc7593)
 
 GÉANT 은 유럽의 국가연구교육망(NREN) 연합체다. 2002년 GÉANT 의 전신인 TERENA 의 태스크포스 TF-Mobility 에서 eduroam 이 시작되었고, 2003년 6개국으로 서비스가 시작되었다.

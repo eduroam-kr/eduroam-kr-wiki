@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 공개하면 안 되는 내용 (보안 사고, 취약점)
+    url: https://eduroam.kreonet.net
+    about: 이슈로 올리지 말고 NRO 에 메일로 보내 주세요. 연락처는 공식 웹사이트에 있습니다.
