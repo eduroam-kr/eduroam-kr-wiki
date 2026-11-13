@@ -32,7 +32,7 @@ RO 는 자기 부문 안에서 NRO 를 대리합니다. 그래서 NRO 에게 요
 
 1.2. RADIUS 프록시는 이중화한다. 한 대가 멎어도 부문 전체의 인증이 멎지 않아야 한다. <small class="text-body-secondary">(협의 예정)</small>
 
-1.3. realm 라우팅은 **명시한 realm 만** 올려보낸다. 정규식으로 `*.ac.kr` 같이 싸잡아 넘기지 않는다. 목록에 없는 realm 을 되돌려 보내면 NRO 와 RO 사이에서 요청이 맴돈다([2017.12. 운영정책 세미나]({{ '/records/2017-12-policy-seminar/' | relative_url }})에서 실제로 겪은 문제다). <small class="text-body-secondary">(협의 예정)</small>
+1.3. NRO 에서 받은 요청 가운데 자기 목록에 없는 realm 은 NRO 로 되돌려 보내지 않고 거절한다. NRO 도 RO 에서 받은 요청에 같은 원칙을 적용한다. 양쪽이 서로 되돌려 보내면 요청이 두 서버 사이를 맴돈다([2017.12. 운영정책 세미나]({{ '/records/2017-12-policy-seminar/' | relative_url }})에서 논의한 사례다). <small class="text-body-secondary">(협의 예정)</small>
 
 1.4. 참여기관이 realm 을 더하거나 뺀 날로부터 **근무일 기준 3일 안에** 자기 라우팅과 NRO 쪽 정보에 반영한다. <small class="text-body-secondary">(협의 예정)</small>
 
