@@ -16,3 +16,8 @@
   border: 1px solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
 }
+
+/* 글자로 그린 도식. 테마는 코드 줄을 접는데, 도식은 접으면 선이 어긋나므로
+   접지 않고 좌우로 밀어 보게 한다. */
+.doc-body .diagram pre { overflow-x: auto; }
+.doc-body .diagram pre code { white-space: pre; word-break: normal; }

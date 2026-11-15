@@ -19,8 +19,20 @@
   url: /tech/
   icon: fa-network-wired
   children:
+    - title: RADIUS 서버 인증서와 CA
+      url: /tech/eap-certificates/
+    - title: 운영체제별 서버 확인 설정
+      url: /tech/client-validation/
     - title: CA 인증서 사전 설치 (안드로이드 11 이상)
       url: /tech/ca-install/
+    - title: 익명 ID 와 realm
+      url: /tech/identity-and-realm/
+    - title: 계정 · 비밀번호와 EAP 방식
+      url: /tech/credentials/
+    - title: "로밍 운영: 거절과 반복 실패 대응"
+      url: /tech/roaming-operations/
+    - title: 다중캠퍼스 위치와 감사 기록
+      url: /tech/location-logging/
 - title: 기록
   url: /records/
   icon: fa-box-archive
