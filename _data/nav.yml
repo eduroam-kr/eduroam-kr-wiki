@@ -23,8 +23,6 @@
       url: /tech/eap-certificates/
     - title: 운영체제별 서버 확인 설정
       url: /tech/client-validation/
-    - title: CA 인증서 사전 설치 (안드로이드 11 이상)
-      url: /tech/ca-install/
     - title: 익명 ID 와 realm
       url: /tech/identity-and-realm/
     - title: 계정 · 비밀번호와 EAP 방식
@@ -33,6 +31,8 @@
       url: /tech/roaming-operations/
     - title: 다중캠퍼스 위치와 감사 기록
       url: /tech/location-logging/
+    - title: 접속 장애 대응 (기관 담당자용)
+      url: /tech/troubleshooting/
 - title: 기록
   url: /records/
   icon: fa-box-archive

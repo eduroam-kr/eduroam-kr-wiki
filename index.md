@@ -26,7 +26,8 @@ permalink: /
 
 ## 기술
 
-- [CA 인증서 제공 및 사전 설치 (안드로이드 11 이상)]({{ '/tech/ca-install/' | relative_url }})
+- 이용자용 [접속 방법](https://eduroam.kreonet.net/connect/)과 [접속이 안 될 때](https://eduroam.kreonet.net/connect/help/)는 공식 웹사이트에 있습니다
+- [기술 문서 목록]({{ '/tech/' | relative_url }}) — 인증서, 단말 설정, realm, 로밍 운영, 위치 기록, 접속 장애 대응
 - 구현 예시는 [kr-nro-docker](https://github.com/eduroam-kr/kr-nro-docker) 에 있습니다
 
 ## 기록
