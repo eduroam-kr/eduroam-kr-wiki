@@ -122,7 +122,7 @@ toc: true
 - 암호가 있어도, 하나의 암호로 다수의 사용자가 접속하는 Wi-Fi는 해킹의 위험에 노출됨
   - 커피샵, 식당 등에서 Wi-Fi 비번을 공유하는 경우
 - wififree.kr의 공공 Wi-Fi (Public Wifi Secure) 또한 해킹의 위험에 노출됨
-  - 모든 사용자가 동일한 인증정보 이용 (ID: wifi, 암호: wifi) <http://wififree.kr/service_info_03.do>
+  - 모든 사용자가 동일한 인증정보 이용 (ID: wifi, 암호: wifi) [당시 안내 페이지(웹 아카이브)](https://web.archive.org/web/20171113152549/http://www.wififree.kr:80/service_info_03.do)
   - 가짜 AP를 구분할 인증서버의 서버인증서 설치절차가 없음
 - 본인이 가입한 통신사 Wi-Fi의 대부분은 안전함
   - 단말기의 USIM 정보를 이용, 서로 다른 key로 암호화 하여 전송 (WPA-EAP-SIM)

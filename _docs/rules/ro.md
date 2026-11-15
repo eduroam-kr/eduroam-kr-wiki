@@ -38,7 +38,7 @@ RO 는 자기 부문 안에서 NRO 를 대리합니다. 그래서 NRO 에게 요
 
 1.5. 서버 주소·공유키를 바꾸기 전에 참여기관과 NRO 에 **최소 2주 전** 알린다. 긴급 보안 조치는 예외로 하되 사후에 알린다. <small class="text-body-secondary">(협의 예정)</small>
 
-1.6. 구현 예시는 [nro-docker](https://github.com/eduroam-kr/nro-docker) 에 있다.
+1.6. 구현 예시는 [kr-nro-docker](https://github.com/eduroam-kr/kr-nro-docker) 에 있다.
 
 ## 2. Operator-Name
 

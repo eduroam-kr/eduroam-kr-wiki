@@ -27,7 +27,7 @@ permalink: /
 ## 기술
 
 - [CA 인증서 제공 및 사전 설치 (안드로이드 11 이상)]({{ '/tech/ca-install/' | relative_url }})
-- 구현 예시는 [nro-docker](https://github.com/eduroam-kr/nro-docker) 에 있습니다
+- 구현 예시는 [kr-nro-docker](https://github.com/eduroam-kr/kr-nro-docker) 에 있습니다
 
 ## 기록
 
